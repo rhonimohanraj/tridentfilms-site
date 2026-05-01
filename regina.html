@@ -1648,47 +1648,20 @@
     }
   </style>
   <script>
-    /* GEO REDIRECT — runs before paint */
+    /* CITY PAGE — only respect manual override, never auto-redirect */
     (function () {
-      var CURRENT = document.documentElement.dataset.city || 'winnipeg';
+      var CURRENT = document.documentElement.dataset.city;
       var CITIES = [
-        { id: 'winnipeg', lat: 49.8951, lng: -97.1384, url: 'index.html' },
-        { id: 'brandon', lat: 49.8485, lng: -99.9501, url: 'brandon.html' },
-        { id: 'regina', lat: 50.4452, lng: -104.6189, url: 'regina.html' },
+        { id: 'winnipeg', url: 'index.html' },
+        { id: 'brandon',  url: 'brandon.html' },
+        { id: 'regina',   url: 'regina.html' },
       ];
-      function hav(a, b, c, d) {
-        var R = 6371, dL = (c - a) * Math.PI / 180, dG = (d - b) * Math.PI / 180;
-        var x = Math.sin(dL / 2) * Math.sin(dL / 2) + Math.cos(a * Math.PI / 180) * Math.cos(c * Math.PI / 180) * Math.sin(dG / 2) * Math.sin(dG / 2);
-        return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
-      }
-      function nearest(lat, lng) {
-        var best = CITIES[0], bestD = Infinity;
-        CITIES.forEach(function (c) { var d = hav(lat, lng, c.lat, c.lng); if (d < bestD) { bestD = d; best = c; } });
-        return best;
-      }
-      function goTo(city) { if (city.id !== CURRENT) window.location.replace(city.url); }
-      /* manual override always wins */
+      localStorage.setItem('tf_city', CURRENT);
       if (localStorage.getItem('tf_city_manual')) {
-        var m = CITIES.find(function (c) { return c.id === localStorage.getItem('tf_city'); });
-        if (m) goTo(m);
-        return;
+        var saved = localStorage.getItem('tf_city');
+        var target = CITIES.find(function(c) { return c.id === saved; });
+        if (target && target.id !== CURRENT) window.location.replace(target.url);
       }
-      /* skip geo if detected recently */
-      var ts = localStorage.getItem('tf_geo_ts');
-      if (ts && Date.now() - parseInt(ts) < 86400000) {
-        var s = CITIES.find(function (c) { return c.id === localStorage.getItem('tf_city'); });
-        if (s) goTo(s);
-        return;
-      }
-      /* fresh detection */
-      fetch('https://ipapi.co/json/')
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          localStorage.setItem('tf_geo_ts', Date.now().toString());
-          var city = nearest(d.latitude, d.longitude);
-          localStorage.setItem('tf_city', city.id);
-          goTo(city);
-        }).catch(function () { });
     })();
   </script>
 </head>
