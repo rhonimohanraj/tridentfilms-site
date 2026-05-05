@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Hire a Videographer? — Trident Films</title>
+  <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
+  <meta name="description" content="More couples than ever are adding videographers to their wedding team — and for good reason. Here's what you gain when you choose to have your day on film.">
+  <link rel="canonical" href="https://tridentfilms.ca/blog-why-hire-videographer">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why Hire a Videographer?","datePublished":"2026-05-01","author":{"@type":"Organization","name":"Trident Films"},"publisher":{"@type":"Organization","name":"Trident Films"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Outfit', sans-serif; }
+    [data-theme="dark"] { --bg: #0a0a0a; --bg-alt: #0f0f0f; --fg: #f5f5f0; --fg-muted: #8a8a85; --fg-dim: #555550; --border: rgba(245,245,240,0.06); --border-hover: rgba(245,245,240,0.15); --glass: rgba(10,10,10,0.6); --glass-solid: rgba(10,10,10,0.92); --btn-bg: #f5f5f0; --btn-fg: #0a0a0a; --grain-opacity: 0.04; }
+    [data-theme="light"] { --bg: #f5f5f0; --bg-alt: #eaeae5; --fg: #0a0a0a; --fg-muted: #555550; --fg-dim: #8a8a85; --border: rgba(10,10,10,0.08); --border-hover: rgba(10,10,10,0.2); --glass: rgba(245,245,240,0.7); --glass-solid: rgba(245,245,240,0.95); --btn-bg: #0a0a0a; --btn-fg: #f5f5f0; --grain-opacity: 0.02; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--fg); overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: background 0.6s, color 0.6s; }
+    .grain { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 180px; }
+    .cursor-dot { width: 8px; height: 8px; background: var(--fg); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); }
+    .cursor-ring { width: 40px; height: 40px; border: 1px solid rgba(128,128,128,0.4); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); transition: width 0.3s, height 0.3s; }
+    .cursor-ring.hovering { width: 64px; height: 64px; }
+    .theme-toggle { position: fixed; bottom: 32px; right: 32px; z-index: 9998; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-hover); background: var(--glass-solid); backdrop-filter: blur(12px); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.3s; color: var(--fg); }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 10px 48px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(20px); background: var(--glass); border-bottom: 1px solid var(--border); transition: all 0.4s; }
+    nav.scrolled { padding: 6px 48px; background: var(--glass-solid); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 72px; width: auto; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-muted); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-cta { padding: 10px 28px !important; border: 1px solid var(--border-hover) !important; color: var(--fg) !important; }
+    .nav-cta:hover { background: var(--btn-bg) !important; color: var(--btn-fg) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+    .hamburger span { display: block; width: 28px; height: 1.5px; background: var(--fg); transition: transform 0.35s, opacity 0.25s; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: 36px; opacity: 0; pointer-events: none; transition: opacity 0.4s; }
+    .mobile-nav.open { opacity: 1; pointer-events: all; }
+    .mobile-nav a { font-family: var(--font-display); font-size: 2.4rem; color: var(--fg); text-decoration: none; opacity: 0.55; transition: opacity 0.3s; }
+    .article-hero { position: relative; width: 100%; height: 60vh; max-height: 580px; overflow: hidden; margin-top: 92px; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.55) 100%); }
+    .article-header { max-width: 800px; margin: 0 auto; padding: 64px 48px 0; }
+    .article-back { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-dim); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 36px; transition: color 0.3s; }
+    .article-back:hover { color: var(--fg); }
+    .article-cat { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-muted); padding: 5px 10px; border: 1px solid var(--border); display: inline-block; margin-bottom: 28px; }
+    .article-title { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3.6rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
+    .article-intro { font-size: 1.05rem; color: var(--fg-muted); line-height: 1.9; font-weight: 300; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .article-meta { display: flex; gap: 24px; padding: 20px 0 0; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 56px 48px 120px; }
+    .article-body h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; margin: 56px 0 20px; line-height: 1.2; }
+    .article-body p { font-size: 0.97rem; color: var(--fg-muted); line-height: 1.92; font-weight: 300; margin-bottom: 24px; }
+    .article-body strong { color: var(--fg); font-weight: 600; }
+    .pull-quote { border-left: 3px solid var(--fg-dim); padding: 24px 32px; margin: 48px 0; background: var(--bg-alt); }
+    .pull-quote p { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; line-height: 1.65; color: var(--fg); margin-bottom: 0; }
+    .related { padding: 80px 48px; background: var(--bg-alt); border-top: 1px solid var(--border); }
+    .related-label { font-size: 0.65rem; letter-spacing: 0.38em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; margin-bottom: 16px; }
+    .related-heading { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; margin-bottom: 48px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .related-card { background: var(--bg); border: 1px solid var(--border); padding: 36px 28px; text-decoration: none; color: var(--fg); transition: border-color 0.3s; display: flex; flex-direction: column; gap: 12px; }
+    .related-card:hover { border-color: var(--border-hover); }
+    .related-cat { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-dim); }
+    .related-card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 400; line-height: 1.3; flex: 1; }
+    .related-arrow { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    #contact { text-align: center; padding: 160px 48px; }
+    .contact-title { font-family: var(--font-display); font-size: clamp(2.4rem, 4.5vw, 4.5rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; max-width: 680px; margin-left: auto; margin-right: auto; }
+    .contact-title em { font-style: italic; opacity: 0.6; }
+    .contact-sub { font-size: 0.95rem; color: var(--fg-muted); margin-bottom: 48px; font-weight: 300; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .contact-btn { display: inline-block; padding: 18px 60px; background: var(--btn-bg); color: var(--btn-fg); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; transition: all 0.4s; }
+    .contact-btn:hover { transform: translateY(-3px); }
+    footer { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-logo img { height: 26px; width: auto; opacity: 0.55; }
+    .footer-center { font-size: 0.65rem; color: var(--fg-dim); letter-spacing: 0.1em; text-align: center; }
+    .footer-right { display: flex; gap: 32px; }
+    .footer-right a { font-size: 0.68rem; color: var(--fg-dim); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
+    .footer-right a:hover { color: var(--fg); }
+    .hr { height: 1px; background: var(--border); }
+    .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.85s ease, transform 0.85s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) { .article-hero { height: 40vh; margin-top: 72px; } .article-header, .article-body { padding-left: 24px; padding-right: 24px; } nav { padding: 16px 24px; } .nav-links { display: none; } .hamburger { display: flex; } .mobile-nav { display: flex; } .related { padding: 60px 24px; } .related-grid { grid-template-columns: 1fr; } #contact { padding: 100px 24px; } footer { flex-direction: column; gap: 24px; text-align: center; } .footer-right { justify-content: center; } .cursor-dot, .cursor-ring { display: none; } .theme-toggle { bottom: 20px; right: 20px; width: 42px; height: 42px; } }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo"></a>
+    <div class="nav-links"><a href="index.html#story">About</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Work</a><a href="index.html#team">Team</a><a href="our-thoughts.html">Blog</a><a href="inquiry.html" class="nav-cta">Inquire</a></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#story" onclick="closeMobile()">About</a><a href="index.html#services" onclick="closeMobile()">Services</a><a href="index.html#portfolio" onclick="closeMobile()">Work</a><a href="our-thoughts.html" onclick="closeMobile()">Blog</a><a href="inquiry.html" onclick="closeMobile()">Inquire</a>
+  </div>
+
+  <div class="article-hero">
+    <img src="images/blog/blog10.jpg" alt="Why hire a wedding videographer" style="object-position: center 20%;">
+    <div class="article-hero-overlay"></div>
+  </div>
+
+  <div class="article-header reveal">
+    <a href="our-thoughts.html" class="article-back">← Our Thoughts</a>
+    <span class="article-cat">Film Value</span>
+    <h1 class="article-title">Why Hire a Videographer? What You Gain When You Add Film to Your Wedding</h1>
+    <p class="article-intro">For a long time, wedding videography was considered optional — a nice-to-have after the photographer was booked. That has changed. More couples than ever are treating film as essential, and the reasons go deeper than trends. Here is what you actually gain when you hire a professional wedding videographer.</p>
+    <div class="article-meta"><span>May 1, 2026</span><span>·</span><span>6 min read</span></div>
+  </div>
+
+  <div class="article-body reveal">
+
+    <h2>You Gain a Record of Sound</h2>
+    <p>Photography is extraordinary at capturing what things looked like. But a wedding day is not just visual — it is an event filled with sound that matters profoundly. The words of the vows, spoken in the voice of the person you are marrying. The sound of your name in their mouth at the moment they say "I do." The speech your best friend gave that had the whole room laughing and crying simultaneously. The song that played during your first dance, in the actual room, with the actual people you love around you.</p>
+    <p>No photograph captures any of that. A wedding film does. The audio dimension of your wedding day is something many couples don't think about until after — and then wish they had. A skilled videographer captures clean, clear audio from the ceremony and reception that would otherwise exist only in fading memory.</p>
+
+    <h2>You Gain the Perspective You Couldn't Have</h2>
+    <p>Every couple, no matter how present and intentional they are on their wedding day, misses most of it. You cannot be in two places at once. You cannot watch yourself walk down the aisle. You cannot see the expression on your partner's face the moment you appear at the end of the room. You cannot observe your family and friends from across the room while you are standing at the altar. Film gives you every angle — including the ones that were physically impossible for you to see on the day itself.</p>
+    <p>Many couples describe watching their wedding film as a second experience of the day — one where, freed from the pressure of performing and participating, they can finally absorb what was happening around them. For most, this second viewing is more emotionally affecting than the first experience, because they can actually receive it.</p>
+
+    <div class="pull-quote">
+      <p>"Every couple we've filmed has said some version of the same thing: 'I didn't realise how much I missed until I watched the film.' The camera sees everything you were too busy to notice."</p>
+    </div>
+
+    <h2>You Gain a Keepsake That Outlasts Everything Else</h2>
+    <p>The flowers from your wedding will be gone within a week. The cake, the food, the favours — all consumed or discarded. Even the dress, carefully preserved, is something most people only look at a few times over the course of their lives. A wedding film is something couples return to — on anniversaries, on hard days, on ordinary evenings when they want to remember why they chose each other.</p>
+    <p>The keepsake value of a wedding film compounds over time in a way that almost nothing else from the wedding does. The footage of your parents dancing, your grandparents watching from the front row, your closest friends in the same room at the same time — these become more precious every year, not less. A wedding film is one of the very few things from your wedding that genuinely improves with age.</p>
+
+    <h2>You Gain Something to Share</h2>
+    <p>A wedding film is something you can share with people who couldn't be there — family members abroad, friends who were ill, people who will come into your life in the years after the wedding and will never otherwise see what your day looked like. It is something you can show your children. It is something that can exist as a document of your family at a particular moment in time — young, together, at their best.</p>
+    <p>The social dimension of a wedding film is often underestimated. Couples who share their film with extended family almost universally receive responses along the lines of "I felt like I was actually there." For people who love you and couldn't attend, that is an extraordinary gift.</p>
+
+    <h2>You Gain Peace of Mind on the Day</h2>
+    <p>There is a practical, day-of benefit to having a videographer that most couples don't anticipate until they are living it: you stop worrying about trying to capture everything yourself, and so does your family. When couples have no videographer, there is often pressure — conscious or not — on guests to film moments on their phones, leading to a sea of raised screens and a general sense that the experience is being recorded rather than lived. A professional videographer removes that pressure entirely. Everyone in the room can be present because someone whose job it is to capture the day is already doing so.</p>
+    <p>If you're ready to add film to your wedding day, <a href="inquiry.html" style="color:var(--fg-muted);text-decoration:underline;text-underline-offset:3px;">we'd love to talk about what that looks like for your specific vision</a>.</p>
+
+  </div>
+
+  <div class="related reveal">
+    <p class="related-label">Keep Reading</p>
+    <h2 class="related-heading">More from Our Thoughts</h2>
+    <div class="related-grid">
+      <a href="blog-why-film-important.html" class="related-card"><span class="related-cat">Film Value</span><span class="related-card-title">Why Is Wedding Film Important?</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-why-film-costs.html" class="related-card"><span class="related-cat">Film Value</span><span class="related-card-title">Why Does Wedding Film Cost So Much?</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-finding-the-right-one.html" class="related-card"><span class="related-cat">Couples Guide</span><span class="related-card-title">Finding the Right One</span><span class="related-arrow">Read Article →</span></a>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+  <section id="contact">
+    <p style="font-size:0.65rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:20px;font-weight:600;">Get In Touch</p>
+    <h2 class="contact-title">Let's tell your <em>love story.</em></h2>
+    <p class="contact-sub">Your wedding day deserves more than documentation — it deserves artistry. We'd love to hear about your vision.</p>
+    <a href="inquiry.html" class="contact-btn">Inquire Now</a>
+  </section>
+  <footer>
+    <div class="footer-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="footerLogo"></div>
+    <div class="footer-center">© 2026 Trident Films · Part of the Trident Event Group</div>
+    <div class="footer-right"><a href="https://www.tridenteventgroup.ca" target="_blank">Event Group</a><a href="https://www.instagram.com/tridentfilms/" target="_blank">Instagram</a><a href="mailto:hello@tridentfilms.ca">Contact</a></div>
+  </footer>
+  <script>
+    const html = document.documentElement; const themeToggle = document.getElementById('themeToggle'); const navLogo = document.getElementById('navLogo'); const footerLogo = document.getElementById('footerLogo');
+    function setTheme(t) { html.setAttribute('data-theme', t); themeToggle.textContent = t === 'dark' ? '☀️' : '🌙'; const s = t === 'dark' ? 'images/logos/TridentFilms-White.png' : 'images/logos/TridentFilms-Black.png'; navLogo.src = s; footerLogo.src = s; localStorage.setItem('tf-theme', t); }
+    function toggleTheme() { setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    setTheme(localStorage.getItem('tf-theme') || 'dark');
+    const nav = document.getElementById('mainNav'); window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+    const hamburger = document.getElementById('hamburger'); const mobileNav = document.getElementById('mobileNav');
+    function toggleMobile() { hamburger.classList.toggle('open'); mobileNav.classList.toggle('open'); document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : ''; }
+    function closeMobile() { hamburger.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+    const dot = document.getElementById('cursorDot'); const ring = document.getElementById('cursorRing'); let mX = 0, mY = 0, rX = 0, rY = 0;
+    document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; dot.style.left = mX + 'px'; dot.style.top = mY + 'px'; });
+    (function animateRing() { rX += (mX - rX) * 0.11; rY += (mY - rY) * 0.11; ring.style.left = rX + 'px'; ring.style.top = rY + 'px'; requestAnimationFrame(animateRing); })();
+    document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => ring.classList.add('hovering')); el.addEventListener('mouseleave', () => ring.classList.remove('hovering')); });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Thoughts — Trident Films Blog</title>
+  <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
+  <meta name="description" content="Tips, inspiration, and local guides for couples planning their wedding film in Winnipeg, Brandon, Manitoba, and beyond.">
+  <link rel="canonical" href="https://tridentfilms.ca/our-thoughts">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Outfit', sans-serif;
+      --transition-theme: background 0.6s ease, color 0.6s ease, border-color 0.6s ease;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0a0a0a; --bg-alt: #0f0f0f; --fg: #f5f5f0;
+      --fg-muted: #8a8a85; --fg-dim: #555550;
+      --border: rgba(245,245,240,0.06); --border-hover: rgba(245,245,240,0.15);
+      --card-bg: #0f0f0f; --glass: rgba(10,10,10,0.6);
+      --glass-solid: rgba(10,10,10,0.92);
+      --btn-bg: #f5f5f0; --btn-fg: #0a0a0a; --grain-opacity: 0.04;
+    }
+
+    [data-theme="light"] {
+      --bg: #f5f5f0; --bg-alt: #eaeae5; --fg: #0a0a0a;
+      --fg-muted: #555550; --fg-dim: #8a8a85;
+      --border: rgba(10,10,10,0.08); --border-hover: rgba(10,10,10,0.2);
+      --card-bg: #f5f5f0; --glass: rgba(245,245,240,0.7);
+      --glass-solid: rgba(245,245,240,0.95);
+      --btn-bg: #0a0a0a; --btn-fg: #f5f5f0; --grain-opacity: 0.02;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--fg); overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: var(--transition-theme); }
+
+    .grain { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 180px; }
+
+    .cursor-dot { width: 8px; height: 8px; background: var(--fg); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); transition: width 0.2s, height 0.2s; }
+    .cursor-ring { width: 40px; height: 40px; border: 1px solid rgba(128,128,128,0.4); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease; }
+    .cursor-ring.hovering { width: 64px; height: 64px; border-color: rgba(128,128,128,0.7); }
+
+    .theme-toggle { position: fixed; bottom: 32px; right: 32px; z-index: 9998; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-hover); background: var(--glass-solid); backdrop-filter: blur(12px); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.3s ease; color: var(--fg); }
+    .theme-toggle:hover { transform: scale(1.1); border-color: var(--fg); }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 10px 48px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(20px); background: var(--glass); border-bottom: 1px solid var(--border); transition: all 0.4s ease; }
+    nav.scrolled { padding: 6px 48px; background: var(--glass-solid); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 72px; width: auto; object-fit: contain; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-muted); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: var(--fg); }
+    .nav-cta { padding: 10px 28px !important; border: 1px solid var(--border-hover) !important; color: var(--fg) !important; transition: all 0.3s ease !important; }
+    .nav-cta:hover { background: var(--btn-bg) !important; color: var(--btn-fg) !important; }
+
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+    .hamburger span { display: block; width: 28px; height: 1.5px; background: var(--fg); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: 36px; opacity: 0; pointer-events: none; transition: opacity 0.4s; }
+    .mobile-nav.open { opacity: 1; pointer-events: all; }
+    .mobile-nav a { font-family: var(--font-display); font-size: 2.4rem; color: var(--fg); text-decoration: none; opacity: 0.55; transition: opacity 0.3s; }
+    .mobile-nav a:hover { opacity: 1; }
+
+    #page-hero { padding: 200px 48px 120px; border-bottom: 1px solid var(--border); max-width: 860px; }
+    .page-tag { font-size: 0.65rem; letter-spacing: 0.38em; text-transform: uppercase; color: var(--fg-dim); margin-bottom: 24px; font-weight: 600; opacity: 0; animation: fadeUp 1s ease 0.2s forwards; }
+    .page-title { font-family: var(--font-display); font-size: clamp(2.6rem, 5.5vw, 5rem); line-height: 1.08; font-weight: 400; margin-bottom: 24px; opacity: 0; animation: fadeUp 1s ease 0.4s forwards; }
+    .page-title em { font-style: italic; opacity: 0.6; }
+    .page-desc { font-size: 1rem; color: var(--fg-muted); font-weight: 300; line-height: 1.8; max-width: 480px; opacity: 0; animation: fadeUp 1s ease 0.6s forwards; }
+
+    #blog { padding: 100px 48px 140px; }
+
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+    .blog-card { background: var(--card-bg); border: 1px solid var(--border); overflow: hidden; position: relative; transition: border-color 0.4s ease; display: flex; flex-direction: column; }
+    .blog-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--fg); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+    .blog-card:hover { border-color: var(--border-hover); }
+    .blog-card:hover::after { transform: scaleX(1); }
+
+    .blog-cover { width: 100%; aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0; }
+    .blog-cover img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.7s ease; }
+    .blog-card:hover .blog-cover img { transform: scale(1.06); }
+
+    .blog-body { padding: 36px 32px 40px; display: flex; flex-direction: column; flex: 1; }
+    .blog-num { font-size: 0.62rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; margin-bottom: 10px; }
+    .blog-cat { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-muted); font-weight: 500; margin-bottom: 20px; padding: 5px 10px; border: 1px solid var(--border); display: inline-block; }
+    .blog-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 400; line-height: 1.25; margin-bottom: 16px; flex: 1; }
+    .blog-excerpt { font-size: 0.85rem; color: var(--fg-muted); line-height: 1.85; font-weight: 300; margin-bottom: 32px; }
+    .blog-link { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-dim); text-decoration: none; font-weight: 600; transition: color 0.3s; display: inline-flex; align-items: center; gap: 8px; }
+    .blog-link:hover { color: var(--fg); }
+    .blog-link-arrow { transition: transform 0.3s ease; display: inline-block; }
+    .blog-card:hover .blog-link-arrow { transform: translateX(4px); }
+
+    .hr { height: 1px; background: var(--border); }
+
+    #contact { text-align: center; padding: 200px 48px; }
+    .contact-title { font-family: var(--font-display); font-size: clamp(2.8rem, 5.5vw, 5.5rem); font-weight: 400; line-height: 1.08; margin-bottom: 28px; max-width: 720px; margin-left: auto; margin-right: auto; }
+    .contact-title em { font-style: italic; opacity: 0.6; }
+    .contact-sub { font-size: 0.95rem; color: var(--fg-muted); margin-bottom: 52px; font-weight: 300; max-width: 460px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .contact-btn { display: inline-block; padding: 20px 68px; background: var(--btn-bg); color: var(--btn-fg); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; transition: all 0.4s; }
+    .contact-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 60px rgba(128,128,128,0.18); }
+    .contact-email { margin-top: 40px; font-size: 0.78rem; color: var(--fg-dim); letter-spacing: 0.1em; }
+    .contact-email a { color: var(--fg-muted); text-decoration: none; border-bottom: 1px solid var(--border-hover); transition: all 0.3s; }
+    .contact-email a:hover { color: var(--fg); border-color: var(--fg); }
+
+    footer { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-logo img { height: 26px; width: auto; opacity: 0.55; }
+    .footer-center { font-size: 0.65rem; color: var(--fg-dim); letter-spacing: 0.1em; text-align: center; }
+    .footer-right { display: flex; gap: 32px; }
+    .footer-right a { font-size: 0.68rem; color: var(--fg-dim); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
+    .footer-right a:hover { color: var(--fg); }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.85s ease, transform 0.85s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.12s; }
+    .reveal-delay-2 { transition-delay: 0.24s; }
+    .reveal-delay-3 { transition-delay: 0.36s; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 1100px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) {
+      #page-hero { padding: 160px 24px 80px; }
+      #blog { padding: 72px 24px 100px; }
+      #contact { padding: 120px 24px; }
+      nav { padding: 16px 24px; }
+      nav.scrolled { padding: 12px 24px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-nav { display: flex; }
+      .blog-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 24px; text-align: center; }
+      .footer-right { justify-content: center; }
+      .cursor-dot, .cursor-ring { display: none; }
+      .theme-toggle { bottom: 20px; right: 20px; width: 42px; height: 42px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html#story">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Work</a>
+      <a href="index.html#team">Team</a>
+      <a href="our-thoughts.html" class="active">Blog</a>
+      <a href="inquiry.html" class="nav-cta">Inquire</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#story" onclick="closeMobile()">About</a>
+    <a href="index.html#services" onclick="closeMobile()">Services</a>
+    <a href="index.html#portfolio" onclick="closeMobile()">Work</a>
+    <a href="index.html#team" onclick="closeMobile()">Team</a>
+    <a href="our-thoughts.html" onclick="closeMobile()">Blog</a>
+    <a href="inquiry.html" onclick="closeMobile()">Inquire</a>
+  </div>
+
+  <div id="page-hero">
+    <p class="page-tag">Our Thoughts</p>
+    <h1 class="page-title">Tips & stories <em>from the lens.</em></h1>
+    <p class="page-desc">Guides, inspiration, and honest advice for couples planning their wedding film across Winnipeg, Brandon, and beyond.</p>
+  </div>
+
+  <section id="blog">
+    <div class="blog-grid">
+
+      <div class="blog-card reveal">
+        <div class="blog-cover">
+          <img src="images/blog/WeddinPicForBG.jpg" alt="Wedding videography in Winnipeg" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">01</p>
+          <span class="blog-cat">Winnipeg Guide</span>
+          <h2 class="blog-title">The Best Wedding Videography in Winnipeg: Capturing Your Perfect Day</h2>
+          <p class="blog-excerpt">Your wedding day is one of the most meaningful celebrations of your life. Choosing the right videographer in Winnipeg ensures those precious moments are preserved forever.</p>
+          <a href="blog-winnipeg-videography.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-cover">
+          <img src="images/blog/PortfolioBG.jpeg" alt="Wedding film locations in Brandon and Winnipeg" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">02</p>
+          <span class="blog-cat">Locations</span>
+          <h2 class="blog-title">Top 10 Wedding Videography Locations in Brandon &amp; Winnipeg</h2>
+          <p class="blog-excerpt">The best Brandon and Winnipeg wedding film locations — parks, venues, and city backdrops that look breathtaking on video.</p>
+          <a href="blog-film-locations.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-cover">
+          <img src="images/blog/blog4.jpeg" alt="How to choose a Manitoba wedding videographer" loading="lazy" style="object-position: center 30%;">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">03</p>
+          <span class="blog-cat">Planning Tips</span>
+          <h2 class="blog-title">How to Choose the Best Wedding Videographer in Manitoba</h2>
+          <p class="blog-excerpt">A practical guide to comparing Manitoba wedding videographers — style, audio, timelines, and what really matters for your film.</p>
+          <a href="blog-choose-videographer.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cover">
+          <img src="images/blog/blog5.jpeg" alt="Finding the right wedding videographer" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">04</p>
+          <span class="blog-cat">Couples Guide</span>
+          <h2 class="blog-title">Finding the Right One</h2>
+          <p class="blog-excerpt">Your wedding films — after your photos — will be your most cherished keepsake from the big day. Here's how to find the team who will do your story justice.</p>
+          <a href="blog-finding-the-right-one.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-cover">
+          <img src="images/blog/blog1.jpeg" alt="The art of capturing wedding films" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">05</p>
+          <span class="blog-cat">Behind The Lens</span>
+          <h2 class="blog-title">The Art Of Film: Capturing Your Day</h2>
+          <p class="blog-excerpt">Your wedding day is a momentous occasion filled with love, laughter, and cherished memories. Here's how we translate that into a cinematic film.</p>
+          <a href="blog-art-of-film.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-cover">
+          <img src="images/blog/venue.jpg" alt="Winnipeg wedding venues on film" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">06</p>
+          <span class="blog-cat">Winnipeg Venues</span>
+          <h2 class="blog-title">Capturing Love Stories at Winnipeg's Most Stunning Wedding Venues</h2>
+          <p class="blog-excerpt">From The Forks to the Fort Garry Hotel, we've filmed across Winnipeg's most breathtaking venues. Here's what each looks like through a cinematic lens.</p>
+          <a href="blog-winnipeg-venues.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cover">
+          <img src="images/blog/blog3.jpeg" alt="The art of posing for wedding film" loading="lazy" style="object-position: center 65%;">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">07</p>
+          <span class="blog-cat">Behind The Lens</span>
+          <h2 class="blog-title">The Art of Posing</h2>
+          <p class="blog-excerpt">Your wedding film serves a far greater purpose than announcing your relationship on social media. Here's how intentional posing shapes your entire film.</p>
+          <a href="blog-art-of-posing.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-cover">
+          <img src="images/blog/aboutpic04.jpg" alt="Why wedding film is important" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">08</p>
+          <span class="blog-cat">Film Value</span>
+          <h2 class="blog-title">Why Is Wedding Film Important?</h2>
+          <p class="blog-excerpt">Photography freezes a moment. Film brings it back to life. Here's why wedding videography is the most meaningful keepsake from your wedding day.</p>
+          <a href="blog-why-film-important.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-cover">
+          <img src="images/blog/blog6.jpeg" alt="Why wedding film costs what it does" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">09</p>
+          <span class="blog-cat">Film Value</span>
+          <h2 class="blog-title">Why Does Wedding Film Cost So Much?</h2>
+          <p class="blog-excerpt">Sticker shock is real — but so is the work behind your film. An honest breakdown of what goes into the cost of professional wedding videography.</p>
+          <a href="blog-why-film-costs.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-cover">
+          <img src="images/blog/blog10.jpg" alt="Why hire a wedding videographer" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <p class="blog-num">10</p>
+          <span class="blog-cat">Film Value</span>
+          <h2 class="blog-title">Why Hire a Videographer?</h2>
+          <p class="blog-excerpt">More couples than ever are adding videographers to their wedding team — and for good reason. Here's what you gain when you choose to have your day on film.</p>
+          <a href="blog-why-hire-videographer.html" class="blog-link">Read Article <span class="blog-link-arrow">→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <section id="contact">
+    <div class="reveal">
+      <p class="page-tag" style="letter-spacing:0.38em;">Get In Touch</p>
+      <h2 class="contact-title">Let's tell your <em>love story.</em></h2>
+      <p class="contact-sub">Your wedding day deserves more than documentation — it deserves artistry. We'd love to hear about your vision and create something truly timeless together.</p>
+      <a href="inquiry.html" class="contact-btn">Inquire Now</a>
+      <p class="contact-email">Or reach us directly at <a href="mailto:hello@tridentfilms.ca">hello@tridentfilms.ca</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="footerLogo">
+    </div>
+    <div class="footer-center">© 2026 Trident Films · Part of the Trident Event Group</div>
+    <div class="footer-right">
+      <a href="https://www.tridenteventgroup.ca" target="_blank">Event Group</a>
+      <a href="https://www.instagram.com/tridentfilms/" target="_blank">Instagram</a>
+      <a href="mailto:hello@tridentfilms.ca">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const navLogo = document.getElementById('navLogo');
+    const footerLogo = document.getElementById('footerLogo');
+
+    function setTheme(t) {
+      html.setAttribute('data-theme', t);
+      themeToggle.textContent = t === 'dark' ? '☀️' : '🌙';
+      const src = t === 'dark' ? 'images/logos/TridentFilms-White.png' : 'images/logos/TridentFilms-Black.png';
+      navLogo.src = src; footerLogo.src = src;
+      localStorage.setItem('tf-theme', t);
+    }
+    function toggleTheme() { setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    setTheme(localStorage.getItem('tf-theme') || 'dark');
+
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    function toggleMobile() { hamburger.classList.toggle('open'); mobileNav.classList.toggle('open'); document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : ''; }
+    function closeMobile() { hamburger.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mX = 0, mY = 0, rX = 0, rY = 0;
+    document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; dot.style.left = mX + 'px'; dot.style.top = mY + 'px'; });
+    (function animateRing() { rX += (mX - rX) * 0.11; rY += (mY - rY) * 0.11; ring.style.left = rX + 'px'; ring.style.top = rY + 'px'; requestAnimationFrame(animateRing); })();
+    document.querySelectorAll('a, button, .blog-card').forEach(el => { el.addEventListener('mouseenter', () => ring.classList.add('hovering')); el.addEventListener('mouseleave', () => ring.classList.remove('hovering')); });
+
+    const revealObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
+</body>
+</html>

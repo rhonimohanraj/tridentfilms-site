@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding the Right Wedding Videographer — Trident Films</title>
+  <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
+  <meta name="description" content="Your wedding film will outlast the flowers, the cake, and the DJ playlist. Here's how to find the videographer who will do your love story justice.">
+  <link rel="canonical" href="https://tridentfilms.ca/blog-finding-the-right-one">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Finding the Right Wedding Videographer","datePublished":"2026-03-06","author":{"@type":"Organization","name":"Trident Films"},"publisher":{"@type":"Organization","name":"Trident Films"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Outfit', sans-serif; }
+    [data-theme="dark"] { --bg: #0a0a0a; --bg-alt: #0f0f0f; --fg: #f5f5f0; --fg-muted: #8a8a85; --fg-dim: #555550; --border: rgba(245,245,240,0.06); --border-hover: rgba(245,245,240,0.15); --glass: rgba(10,10,10,0.6); --glass-solid: rgba(10,10,10,0.92); --btn-bg: #f5f5f0; --btn-fg: #0a0a0a; --grain-opacity: 0.04; }
+    [data-theme="light"] { --bg: #f5f5f0; --bg-alt: #eaeae5; --fg: #0a0a0a; --fg-muted: #555550; --fg-dim: #8a8a85; --border: rgba(10,10,10,0.08); --border-hover: rgba(10,10,10,0.2); --glass: rgba(245,245,240,0.7); --glass-solid: rgba(245,245,240,0.95); --btn-bg: #0a0a0a; --btn-fg: #f5f5f0; --grain-opacity: 0.02; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--fg); overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: background 0.6s, color 0.6s; }
+    .grain { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 180px; }
+    .cursor-dot { width: 8px; height: 8px; background: var(--fg); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); }
+    .cursor-ring { width: 40px; height: 40px; border: 1px solid rgba(128,128,128,0.4); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); transition: width 0.3s, height 0.3s; }
+    .cursor-ring.hovering { width: 64px; height: 64px; }
+    .theme-toggle { position: fixed; bottom: 32px; right: 32px; z-index: 9998; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-hover); background: var(--glass-solid); backdrop-filter: blur(12px); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.3s; color: var(--fg); }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 10px 48px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(20px); background: var(--glass); border-bottom: 1px solid var(--border); transition: all 0.4s; }
+    nav.scrolled { padding: 6px 48px; background: var(--glass-solid); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 72px; width: auto; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-muted); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-cta { padding: 10px 28px !important; border: 1px solid var(--border-hover) !important; color: var(--fg) !important; }
+    .nav-cta:hover { background: var(--btn-bg) !important; color: var(--btn-fg) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+    .hamburger span { display: block; width: 28px; height: 1.5px; background: var(--fg); transition: transform 0.35s, opacity 0.25s; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: 36px; opacity: 0; pointer-events: none; transition: opacity 0.4s; }
+    .mobile-nav.open { opacity: 1; pointer-events: all; }
+    .mobile-nav a { font-family: var(--font-display); font-size: 2.4rem; color: var(--fg); text-decoration: none; opacity: 0.55; transition: opacity 0.3s; }
+    .article-hero { position: relative; width: 100%; height: 60vh; max-height: 580px; overflow: hidden; margin-top: 92px; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.55) 100%); }
+    .article-header { max-width: 800px; margin: 0 auto; padding: 64px 48px 0; }
+    .article-back { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-dim); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 36px; transition: color 0.3s; }
+    .article-back:hover { color: var(--fg); }
+    .article-cat { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-muted); padding: 5px 10px; border: 1px solid var(--border); display: inline-block; margin-bottom: 28px; }
+    .article-title { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3.6rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
+    .article-intro { font-size: 1.05rem; color: var(--fg-muted); line-height: 1.9; font-weight: 300; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .article-meta { display: flex; gap: 24px; padding: 20px 0 0; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 56px 48px 120px; }
+    .article-body h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; margin: 56px 0 20px; line-height: 1.2; }
+    .article-body p { font-size: 0.97rem; color: var(--fg-muted); line-height: 1.92; font-weight: 300; margin-bottom: 24px; }
+    .article-body strong { color: var(--fg); font-weight: 600; }
+    .pull-quote { border-left: 3px solid var(--fg-dim); padding: 24px 32px; margin: 48px 0; background: var(--bg-alt); }
+    .pull-quote p { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; line-height: 1.65; color: var(--fg); margin-bottom: 0; }
+    .related { padding: 80px 48px; background: var(--bg-alt); border-top: 1px solid var(--border); }
+    .related-label { font-size: 0.65rem; letter-spacing: 0.38em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; margin-bottom: 16px; }
+    .related-heading { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; margin-bottom: 48px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .related-card { background: var(--bg); border: 1px solid var(--border); padding: 36px 28px; text-decoration: none; color: var(--fg); transition: border-color 0.3s; display: flex; flex-direction: column; gap: 12px; }
+    .related-card:hover { border-color: var(--border-hover); }
+    .related-cat { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-dim); }
+    .related-card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 400; line-height: 1.3; flex: 1; }
+    .related-arrow { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    #contact { text-align: center; padding: 160px 48px; }
+    .contact-title { font-family: var(--font-display); font-size: clamp(2.4rem, 4.5vw, 4.5rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; max-width: 680px; margin-left: auto; margin-right: auto; }
+    .contact-title em { font-style: italic; opacity: 0.6; }
+    .contact-sub { font-size: 0.95rem; color: var(--fg-muted); margin-bottom: 48px; font-weight: 300; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .contact-btn { display: inline-block; padding: 18px 60px; background: var(--btn-bg); color: var(--btn-fg); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; transition: all 0.4s; }
+    .contact-btn:hover { transform: translateY(-3px); }
+    footer { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-logo img { height: 26px; width: auto; opacity: 0.55; }
+    .footer-center { font-size: 0.65rem; color: var(--fg-dim); letter-spacing: 0.1em; text-align: center; }
+    .footer-right { display: flex; gap: 32px; }
+    .footer-right a { font-size: 0.68rem; color: var(--fg-dim); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
+    .footer-right a:hover { color: var(--fg); }
+    .hr { height: 1px; background: var(--border); }
+    .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.85s ease, transform 0.85s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) {
+      .article-hero { height: 40vh; margin-top: 72px; } .article-header, .article-body { padding-left: 24px; padding-right: 24px; }
+      nav { padding: 16px 24px; } .nav-links { display: none; } .hamburger { display: flex; } .mobile-nav { display: flex; }
+      .related { padding: 60px 24px; } .related-grid { grid-template-columns: 1fr; } #contact { padding: 100px 24px; }
+      footer { flex-direction: column; gap: 24px; text-align: center; } .footer-right { justify-content: center; }
+      .cursor-dot, .cursor-ring { display: none; } .theme-toggle { bottom: 20px; right: 20px; width: 42px; height: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo"></a>
+    <div class="nav-links"><a href="index.html#story">About</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Work</a><a href="index.html#team">Team</a><a href="our-thoughts.html">Blog</a><a href="inquiry.html" class="nav-cta">Inquire</a></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#story" onclick="closeMobile()">About</a><a href="index.html#services" onclick="closeMobile()">Services</a><a href="index.html#portfolio" onclick="closeMobile()">Work</a><a href="our-thoughts.html" onclick="closeMobile()">Blog</a><a href="inquiry.html" onclick="closeMobile()">Inquire</a>
+  </div>
+
+  <div class="article-hero">
+    <img src="images/blog/blog5.jpeg" alt="Finding the right wedding videographer for your day" style="object-position: center 40%;">
+    <div class="article-hero-overlay"></div>
+  </div>
+
+  <div class="article-header reveal">
+    <a href="our-thoughts.html" class="article-back">← Our Thoughts</a>
+    <span class="article-cat">Couples Guide</span>
+    <h1 class="article-title">Finding the Right One</h1>
+    <p class="article-intro">After your photos, your wedding film will be the most-watched keepsake from your wedding day. Years from now, when the flowers have long wilted and the cake is a memory, you'll still be pressing play. That makes the person who makes your film one of the most important decisions of your entire wedding. Here's what no one tells you about finding them.</p>
+    <div class="article-meta"><span>March 6, 2026</span><span>·</span><span>5 min read</span></div>
+  </div>
+
+  <div class="article-body reveal">
+
+    <h2>Your Film Is Your Forever</h2>
+    <p>Weddings are defined by their details — the florals, the venue, the dress, the food. These are the things that couples spend months perfecting. But within five years, most of those details become vague memories. What stays vivid, what you return to, what you share with your children, is the film. The exact sound of your partner's voice when they said their vows. The look on your father's face. The moment the dance floor erupted. These live in film in a way they live nowhere else.</p>
+    <p>This isn't an argument for spending more money. It's an argument for spending your attention on the right thing. A mediocre film of a beautiful wedding is a tragedy. A beautiful film of a modest wedding is a treasure. The difference is almost entirely the person behind the camera.</p>
+
+    <h2>The Difference Between a Vendor and a Storyteller</h2>
+    <p>Every wedding videographer is a vendor. Not every wedding videographer is a storyteller. The distinction matters enormously in the final product. A vendor captures what happens. A storyteller finds out what it means — and then builds a film around that.</p>
+    <p>Storytellers ask questions before the wedding, not just during the inquiry call. They want to know how you met. What makes your partner laugh. Which family members are traveling from far away and why. What song played on your first date. This information doesn't always end up in the film explicitly — but it informs every choice they make, from which moments to prioritize to how the final edit is paced.</p>
+    <p>When you're meeting potential videographers, notice how much they talk and how much they listen. The best ones mostly listen.</p>
+
+    <div class="pull-quote">
+      <p>"The right videographer doesn't just show up on the day. They've already started thinking about your film before they've ever met you."</p>
+    </div>
+
+    <h2>What to Trust When Making the Decision</h2>
+    <p>Portfolios are essential but incomplete. A great portfolio tells you what a videographer is capable of under ideal conditions, with a cooperative couple and good light. What you actually need to know is what they're like when conditions are imperfect — when the ceremony runs long, when a key family member is difficult, when the light disappears an hour early.</p>
+    <p>The most reliable signal for this is referrals — specifically, speaking with past couples, not just reading reviews. Ask them: how did your videographer handle the unexpected? Did they stay calm? Did they communicate clearly? Would you book them again without hesitation? Those answers tell you more than any reel.</p>
+
+    <h2>Chemistry Matters More Than You Think</h2>
+    <p>You will spend more time with your videographer on your wedding day than with almost anyone else in attendance. They'll be in the room during the quiet moments before the ceremony. They'll be behind you on the dance floor at 11pm. They'll witness your first dance, your father-daughter dance, the toast from your best friend who flew in from across the country.</p>
+    <p>If you feel even slightly uncomfortable around your videographer — if their presence makes you self-conscious rather than at ease — it will show in the film. Natural moments require a natural environment. The person holding the camera is part of that environment.</p>
+    <p>Trust the meeting. Trust how you feel when you hang up or close the laptop after the initial conversation. The right one will feel right before anything else does.</p>
+
+    <h2>The Right One Will Feel Right</h2>
+    <p>After six years and 120+ films across Manitoba, we've noticed something consistent: the couples who end up most moved by their films are almost always the ones who felt an immediate connection with the team they chose. Not just "they seemed professional." More than "we liked their portfolio." Something closer to: we felt understood.</p>
+    <p>That's what we try to offer. If you'd like to have that conversation and find out whether we're the right fit for your day, <a href="inquiry.html" style="color:var(--fg-muted);text-decoration:underline;text-underline-offset:3px;">reach out through our inquiry page</a>. We'd love to hear your story.</p>
+
+  </div>
+
+  <div class="related reveal">
+    <p class="related-label">Keep Reading</p>
+    <h2 class="related-heading">More from Our Thoughts</h2>
+    <div class="related-grid">
+      <a href="blog-choose-videographer.html" class="related-card"><span class="related-cat">Planning Tips</span><span class="related-card-title">How to Choose the Best Wedding Videographer in Manitoba</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-why-film-important.html" class="related-card"><span class="related-cat">Film Value</span><span class="related-card-title">Why Is Wedding Film Important?</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-why-hire-videographer.html" class="related-card"><span class="related-cat">Film Value</span><span class="related-card-title">Why Hire a Videographer?</span><span class="related-arrow">Read Article →</span></a>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+  <section id="contact">
+    <p style="font-size:0.65rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:20px;font-weight:600;">Get In Touch</p>
+    <h2 class="contact-title">Let's tell your <em>love story.</em></h2>
+    <p class="contact-sub">Your wedding day deserves more than documentation — it deserves artistry. We'd love to hear about your vision.</p>
+    <a href="inquiry.html" class="contact-btn">Inquire Now</a>
+  </section>
+  <footer>
+    <div class="footer-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="footerLogo"></div>
+    <div class="footer-center">© 2026 Trident Films · Part of the Trident Event Group</div>
+    <div class="footer-right"><a href="https://www.tridenteventgroup.ca" target="_blank">Event Group</a><a href="https://www.instagram.com/tridentfilms/" target="_blank">Instagram</a><a href="mailto:hello@tridentfilms.ca">Contact</a></div>
+  </footer>
+  <script>
+    const html = document.documentElement; const themeToggle = document.getElementById('themeToggle'); const navLogo = document.getElementById('navLogo'); const footerLogo = document.getElementById('footerLogo');
+    function setTheme(t) { html.setAttribute('data-theme', t); themeToggle.textContent = t === 'dark' ? '☀️' : '🌙'; const s = t === 'dark' ? 'images/logos/TridentFilms-White.png' : 'images/logos/TridentFilms-Black.png'; navLogo.src = s; footerLogo.src = s; localStorage.setItem('tf-theme', t); }
+    function toggleTheme() { setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    setTheme(localStorage.getItem('tf-theme') || 'dark');
+    const nav = document.getElementById('mainNav'); window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+    const hamburger = document.getElementById('hamburger'); const mobileNav = document.getElementById('mobileNav');
+    function toggleMobile() { hamburger.classList.toggle('open'); mobileNav.classList.toggle('open'); document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : ''; }
+    function closeMobile() { hamburger.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+    const dot = document.getElementById('cursorDot'); const ring = document.getElementById('cursorRing'); let mX = 0, mY = 0, rX = 0, rY = 0;
+    document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; dot.style.left = mX + 'px'; dot.style.top = mY + 'px'; });
+    (function animateRing() { rX += (mX - rX) * 0.11; rY += (mY - rY) * 0.11; ring.style.left = rX + 'px'; ring.style.top = rY + 'px'; requestAnimationFrame(animateRing); })();
+    document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => ring.classList.add('hovering')); el.addEventListener('mouseleave', () => ring.classList.remove('hovering')); });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

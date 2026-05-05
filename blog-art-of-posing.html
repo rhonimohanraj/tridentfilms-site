@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Posing for Your Wedding Film — Trident Films</title>
+  <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
+  <meta name="description" content="Posing for video is different from posing for photos. Here's how to look natural, confident, and genuinely yourself on your wedding film.">
+  <link rel="canonical" href="https://tridentfilms.ca/blog-art-of-posing">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"The Art of Posing for Your Wedding Film","datePublished":"2026-04-11","author":{"@type":"Organization","name":"Trident Films"},"publisher":{"@type":"Organization","name":"Trident Films"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --font-display: 'Playfair Display', Georgia, serif; --font-body: 'Outfit', sans-serif; }
+    [data-theme="dark"] { --bg: #0a0a0a; --bg-alt: #0f0f0f; --fg: #f5f5f0; --fg-muted: #8a8a85; --fg-dim: #555550; --border: rgba(245,245,240,0.06); --border-hover: rgba(245,245,240,0.15); --glass: rgba(10,10,10,0.6); --glass-solid: rgba(10,10,10,0.92); --btn-bg: #f5f5f0; --btn-fg: #0a0a0a; --grain-opacity: 0.04; }
+    [data-theme="light"] { --bg: #f5f5f0; --bg-alt: #eaeae5; --fg: #0a0a0a; --fg-muted: #555550; --fg-dim: #8a8a85; --border: rgba(10,10,10,0.08); --border-hover: rgba(10,10,10,0.2); --glass: rgba(245,245,240,0.7); --glass-solid: rgba(245,245,240,0.95); --btn-bg: #0a0a0a; --btn-fg: #f5f5f0; --grain-opacity: 0.02; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--fg); overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: background 0.6s, color 0.6s; }
+    .grain { position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: var(--grain-opacity); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 180px; }
+    .cursor-dot { width: 8px; height: 8px; background: var(--fg); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); }
+    .cursor-ring { width: 40px; height: 40px; border: 1px solid rgba(128,128,128,0.4); border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; mix-blend-mode: difference; transform: translate(-50%,-50%); transition: width 0.3s, height 0.3s; }
+    .cursor-ring.hovering { width: 64px; height: 64px; }
+    .theme-toggle { position: fixed; bottom: 32px; right: 32px; z-index: 9998; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--border-hover); background: var(--glass-solid); backdrop-filter: blur(12px); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.3s; color: var(--fg); }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 10px 48px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(20px); background: var(--glass); border-bottom: 1px solid var(--border); transition: all 0.4s; }
+    nav.scrolled { padding: 6px 48px; background: var(--glass-solid); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 72px; width: auto; }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-muted); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+    .nav-links a:hover { color: var(--fg); }
+    .nav-cta { padding: 10px 28px !important; border: 1px solid var(--border-hover) !important; color: var(--fg) !important; }
+    .nav-cta:hover { background: var(--btn-bg) !important; color: var(--btn-fg) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
+    .hamburger span { display: block; width: 28px; height: 1.5px; background: var(--fg); transition: transform 0.35s, opacity 0.25s; transform-origin: center; }
+    .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+    .mobile-nav { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 999; flex-direction: column; justify-content: center; align-items: center; gap: 36px; opacity: 0; pointer-events: none; transition: opacity 0.4s; }
+    .mobile-nav.open { opacity: 1; pointer-events: all; }
+    .mobile-nav a { font-family: var(--font-display); font-size: 2.4rem; color: var(--fg); text-decoration: none; opacity: 0.55; transition: opacity 0.3s; }
+    .article-hero { position: relative; width: 100%; height: 60vh; max-height: 580px; overflow: hidden; margin-top: 92px; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .article-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.55) 100%); }
+    .article-header { max-width: 800px; margin: 0 auto; padding: 64px 48px 0; }
+    .article-back { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-dim); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 36px; transition: color 0.3s; }
+    .article-back:hover { color: var(--fg); }
+    .article-cat { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--fg-muted); padding: 5px 10px; border: 1px solid var(--border); display: inline-block; margin-bottom: 28px; }
+    .article-title { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3.6rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
+    .article-intro { font-size: 1.05rem; color: var(--fg-muted); line-height: 1.9; font-weight: 300; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .article-meta { display: flex; gap: 24px; padding: 20px 0 0; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 56px 48px 120px; }
+    .article-body h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; margin: 56px 0 20px; line-height: 1.2; }
+    .article-body p { font-size: 0.97rem; color: var(--fg-muted); line-height: 1.92; font-weight: 300; margin-bottom: 24px; }
+    .article-body ul { margin: 0 0 28px 24px; }
+    .article-body li { font-size: 0.93rem; color: var(--fg-muted); line-height: 1.8; font-weight: 300; margin-bottom: 8px; }
+    .article-body strong { color: var(--fg); font-weight: 600; }
+    .pull-quote { border-left: 3px solid var(--fg-dim); padding: 24px 32px; margin: 48px 0; background: var(--bg-alt); }
+    .pull-quote p { font-family: var(--font-display); font-size: 1.2rem; font-style: italic; line-height: 1.65; color: var(--fg); margin-bottom: 0; }
+    .related { padding: 80px 48px; background: var(--bg-alt); border-top: 1px solid var(--border); }
+    .related-label { font-size: 0.65rem; letter-spacing: 0.38em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; margin-bottom: 16px; }
+    .related-heading { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; margin-bottom: 48px; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .related-card { background: var(--bg); border: 1px solid var(--border); padding: 36px 28px; text-decoration: none; color: var(--fg); transition: border-color 0.3s; display: flex; flex-direction: column; gap: 12px; }
+    .related-card:hover { border-color: var(--border-hover); }
+    .related-cat { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-dim); }
+    .related-card-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 400; line-height: 1.3; flex: 1; }
+    .related-arrow { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+    #contact { text-align: center; padding: 160px 48px; }
+    .contact-title { font-family: var(--font-display); font-size: clamp(2.4rem, 4.5vw, 4.5rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; max-width: 680px; margin-left: auto; margin-right: auto; }
+    .contact-title em { font-style: italic; opacity: 0.6; }
+    .contact-sub { font-size: 0.95rem; color: var(--fg-muted); margin-bottom: 48px; font-weight: 300; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .contact-btn { display: inline-block; padding: 18px 60px; background: var(--btn-bg); color: var(--btn-fg); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; transition: all 0.4s; }
+    .contact-btn:hover { transform: translateY(-3px); }
+    footer { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .footer-logo img { height: 26px; width: auto; opacity: 0.55; }
+    .footer-center { font-size: 0.65rem; color: var(--fg-dim); letter-spacing: 0.1em; text-align: center; }
+    .footer-right { display: flex; gap: 32px; }
+    .footer-right a { font-size: 0.68rem; color: var(--fg-dim); text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
+    .footer-right a:hover { color: var(--fg); }
+    .hr { height: 1px; background: var(--border); }
+    .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.85s ease, transform 0.85s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 768px) { .article-hero { height: 40vh; margin-top: 72px; } .article-header, .article-body { padding-left: 24px; padding-right: 24px; } nav { padding: 16px 24px; } .nav-links { display: none; } .hamburger { display: flex; } .mobile-nav { display: flex; } .related { padding: 60px 24px; } .related-grid { grid-template-columns: 1fr; } #contact { padding: 100px 24px; } footer { flex-direction: column; gap: 24px; text-align: center; } .footer-right { justify-content: center; } .cursor-dot, .cursor-ring { display: none; } .theme-toggle { bottom: 20px; right: 20px; width: 42px; height: 42px; } }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo"></a>
+    <div class="nav-links"><a href="index.html#story">About</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Work</a><a href="index.html#team">Team</a><a href="our-thoughts.html">Blog</a><a href="inquiry.html" class="nav-cta">Inquire</a></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#story" onclick="closeMobile()">About</a><a href="index.html#services" onclick="closeMobile()">Services</a><a href="index.html#portfolio" onclick="closeMobile()">Work</a><a href="our-thoughts.html" onclick="closeMobile()">Blog</a><a href="inquiry.html" onclick="closeMobile()">Inquire</a>
+  </div>
+
+  <div class="article-hero">
+    <img src="images/blog/blog3.jpeg" alt="The art of posing for wedding film" style="object-position: center 50%;">
+    <div class="article-hero-overlay"></div>
+  </div>
+
+  <div class="article-header reveal">
+    <a href="our-thoughts.html" class="article-back">← Our Thoughts</a>
+    <span class="article-cat">Behind The Lens</span>
+    <h1 class="article-title">The Art of Posing for Your Wedding Film</h1>
+    <p class="article-intro">Most couples think about posing in terms of photos. But posing for video is a different skill entirely — one that's less about stillness and more about movement, connection, and forgetting the camera is there. Here's what we tell every couple before we film them.</p>
+    <div class="article-meta"><span>April 11, 2026</span><span>·</span><span>5 min read</span></div>
+  </div>
+
+  <div class="article-body reveal">
+
+    <h2>Film Posing vs. Photo Posing</h2>
+    <p>Photography is the art of the frozen moment — a frame selected from time. The ideal photographic pose is designed to look good at zero movement: a turned shoulder, a tilted chin, a deliberately held hand position. Video is the opposite. It's time in motion, and anything that looks deliberately held reads as stiff. What works in a still image often looks unnatural when it's given three seconds to play out on screen.</p>
+    <p>This is the fundamental challenge of being filmed: you can't freeze the moment you like and discard the rest. The camera captures everything, including the micro-expressions and the small adjustments and the moments between the moments. The goal is to make all of that look real — because it is real. You're just learning how to let it be.</p>
+
+    <h2>Movements That Translate Beautifully on Video</h2>
+    <p>The best moments in any wedding film are rarely posed at all. They're the natural movements that happen when two people forget they're being filmed: a hand adjusted on a shoulder, a forehead rested against a forehead, a laugh at something whispered between them. But there are also specific movements that directors use intentionally because they read as natural on video while still being visually intentional:</p>
+    <ul>
+      <li><strong>Walking slowly toward each other</strong> — the anticipation as the gap closes is cinematic in a way that standing still never is.</li>
+      <li><strong>Turning to face each other</strong> — especially when the partner doesn't know it's coming.</li>
+      <li><strong>Looking away, then back</strong> — gives the camera a chance to catch the transition between two emotional states.</li>
+      <li><strong>Genuine physical contact</strong> — an arm around a waist, a hand at the back of the neck, a forehead pressed together — reads completely naturally on video.</li>
+      <li><strong>Walking through the frame together</strong> — provides cinematic motion and shows physical ease between the couple.</li>
+    </ul>
+
+    <div class="pull-quote">
+      <p>"The couples who look best on film are almost never the ones trying to look good on film. They're the ones who stopped thinking about the camera and started thinking about each other."</p>
+    </div>
+
+    <h2>What to Avoid When Being Filmed</h2>
+    <p>A few patterns consistently produce footage that looks unnatural, and they're worth knowing in advance so you don't default to them when the camera is rolling:</p>
+    <ul>
+      <li><strong>Holding a smile for too long</strong> — a genuine smile arrives and fades naturally. A held smile reads as performance.</li>
+      <li><strong>Staring directly into the lens</strong> — unless specifically directed to, looking straight into a video camera for an extended moment feels confrontational rather than intimate.</li>
+      <li><strong>Squared shoulders, stiff arms</strong> — the military stance. Let your weight shift slightly, let your arms have a natural position, turn your body at a slight angle.</li>
+      <li><strong>Stopping mid-movement to hold a position</strong> — the movement is the footage, not the position at the end of it.</li>
+    </ul>
+
+    <h2>Our Approach: Directed, Not Staged</h2>
+    <p>At Trident Films, we describe our approach as directed rather than staged. We don't arrange couples into formal positions and ask them to hold still — we give them something to do or a direction to move in, and we capture what happens. We might ask the groom to walk toward the ceremony space and not look back until we tell him. We might ask the couple to simply walk slowly along the river and talk about their first date. The activity gives them somewhere to put their attention — and the camera captures everything that happens around that.</p>
+    <p>We also shoot with long lenses wherever possible during portrait sessions, which creates distance between us and the couple. The longer the lens, the less present we feel — and the more natural the footage becomes. Distance is one of our most useful tools.</p>
+
+    <h2>Trust the Process</h2>
+    <p>Every couple we've ever filmed has said some version of the same thing at the start of a portrait session: "I'm not very photogenic" or "I'm not good at this." And every couple, without exception, has produced beautiful footage by the end. The self-consciousness dissolves quickly once the conversation starts and the movement begins. You don't need to be a model. You need to be yourselves — and we need to be in the right place when that happens. That's our job, not yours.</p>
+
+  </div>
+
+  <div class="related reveal">
+    <p class="related-label">Keep Reading</p>
+    <h2 class="related-heading">More from Our Thoughts</h2>
+    <div class="related-grid">
+      <a href="blog-art-of-film.html" class="related-card"><span class="related-cat">Behind The Lens</span><span class="related-card-title">The Art Of Film: Capturing Your Day</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-finding-the-right-one.html" class="related-card"><span class="related-cat">Couples Guide</span><span class="related-card-title">Finding the Right One</span><span class="related-arrow">Read Article →</span></a>
+      <a href="blog-choose-videographer.html" class="related-card"><span class="related-cat">Planning Tips</span><span class="related-card-title">How to Choose the Best Wedding Videographer in Manitoba</span><span class="related-arrow">Read Article →</span></a>
+    </div>
+  </div>
+
+  <div class="hr"></div>
+  <section id="contact">
+    <p style="font-size:0.65rem;letter-spacing:0.38em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:20px;font-weight:600;">Get In Touch</p>
+    <h2 class="contact-title">Let's tell your <em>love story.</em></h2>
+    <p class="contact-sub">Your wedding day deserves more than documentation — it deserves artistry. We'd love to hear about your vision.</p>
+    <a href="inquiry.html" class="contact-btn">Inquire Now</a>
+  </section>
+  <footer>
+    <div class="footer-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="footerLogo"></div>
+    <div class="footer-center">© 2026 Trident Films · Part of the Trident Event Group</div>
+    <div class="footer-right"><a href="https://www.tridenteventgroup.ca" target="_blank">Event Group</a><a href="https://www.instagram.com/tridentfilms/" target="_blank">Instagram</a><a href="mailto:hello@tridentfilms.ca">Contact</a></div>
+  </footer>
+  <script>
+    const html = document.documentElement; const themeToggle = document.getElementById('themeToggle'); const navLogo = document.getElementById('navLogo'); const footerLogo = document.getElementById('footerLogo');
+    function setTheme(t) { html.setAttribute('data-theme', t); themeToggle.textContent = t === 'dark' ? '☀️' : '🌙'; const s = t === 'dark' ? 'images/logos/TridentFilms-White.png' : 'images/logos/TridentFilms-Black.png'; navLogo.src = s; footerLogo.src = s; localStorage.setItem('tf-theme', t); }
+    function toggleTheme() { setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    setTheme(localStorage.getItem('tf-theme') || 'dark');
+    const nav = document.getElementById('mainNav'); window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+    const hamburger = document.getElementById('hamburger'); const mobileNav = document.getElementById('mobileNav');
+    function toggleMobile() { hamburger.classList.toggle('open'); mobileNav.classList.toggle('open'); document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : ''; }
+    function closeMobile() { hamburger.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+    const dot = document.getElementById('cursorDot'); const ring = document.getElementById('cursorRing'); let mX = 0, mY = 0, rX = 0, rY = 0;
+    document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; dot.style.left = mX + 'px'; dot.style.top = mY + 'px'; });
+    (function animateRing() { rX += (mX - rX) * 0.11; rY += (mY - rY) * 0.11; ring.style.left = rX + 'px'; ring.style.top = rY + 'px'; requestAnimationFrame(animateRing); })();
+    document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => ring.classList.add('hovering')); el.addEventListener('mouseleave', () => ring.classList.remove('hovering')); });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
