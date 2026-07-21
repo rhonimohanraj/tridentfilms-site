@@ -96,6 +96,15 @@
     }
     .theme-toggle:hover { border-color: var(--fg); }
 
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-book {
+      font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--btn-fg); background: var(--btn-bg);
+      padding: 11px 20px; border-radius: 999px; text-decoration: none;
+      white-space: nowrap; transition: opacity 0.3s;
+    }
+    .nav-book:hover { opacity: 0.85; }
+
     /* FORM FRAME */
     .form-wrap {
       position: fixed;
@@ -110,6 +119,8 @@
 
     @media (max-width: 600px) {
       nav { padding: 0 20px; }
+      .nav-right { gap: 10px; }
+      .nav-book { padding: 9px 13px; letter-spacing: 0.1em; font-size: 0.62rem; }
     }
   </style>
 </head>
@@ -129,7 +140,10 @@
       <img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo">
     </a>
 
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+    <div class="nav-right">
+      <a href="book.html" class="nav-book">Book a call</a>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+    </div>
   </nav>
 
   <div class="form-wrap">

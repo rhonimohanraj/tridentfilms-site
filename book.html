@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- If loaded inside the inquiry form's iframe (post-submit redirect), break out to the full tab -->
+  <script>if (window.top !== window.self) { try { window.top.location.replace(window.location.href); } catch (e) {} }</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Call — Trident Films</title>
   <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
