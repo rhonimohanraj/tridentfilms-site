@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyler & Tino Wedding Livestream — Trident Films</title>
+  <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
+  <meta name="description" content="Watch Tyler & Tino's wedding live, filmed by Trident Films.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Outfit', sans-serif;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0a0a0a;
+      --fg: #f5f5f0;
+      --fg-muted: #8a8a85;
+      --border: rgba(245,245,240,0.06);
+      --border-hover: rgba(245,245,240,0.15);
+      --surface: rgba(245,245,240,0.03);
+      --surface-hover: rgba(245,245,240,0.07);
+      --glass-solid: rgba(10,10,10,0.95);
+      --btn-bg: #f5f5f0;
+      --btn-fg: #0a0a0a;
+      --accent: #f5f5f0;
+      --grain-opacity: 0.04;
+    }
+
+    [data-theme="light"] {
+      --bg: #f5f5f0;
+      --fg: #0a0a0a;
+      --fg-muted: #555550;
+      --border: rgba(10,10,10,0.08);
+      --border-hover: rgba(10,10,10,0.2);
+      --surface: rgba(10,10,10,0.03);
+      --surface-hover: rgba(10,10,10,0.06);
+      --glass-solid: rgba(245,245,240,0.97);
+      --btn-bg: #0a0a0a;
+      --btn-fg: #f5f5f0;
+      --accent: #0a0a0a;
+      --grain-opacity: 0.02;
+    }
+
+    html, body {
+      min-height: 100%;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--fg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* GRAIN */
+    .grain {
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9999;
+      opacity: var(--grain-opacity);
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat; background-size: 180px;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: 72px;
+      padding: 0 48px;
+      display: flex; justify-content: space-between; align-items: center;
+      backdrop-filter: blur(20px);
+      background: var(--glass-solid);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 72px; width: auto; object-fit: contain; }
+    .nav-spacer { width: 40px; }
+    .theme-toggle {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1px solid var(--border-hover);
+      background: transparent; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--fg); transition: all 0.3s;
+    }
+    .theme-toggle:hover { border-color: var(--fg); }
+
+    /* PAGE */
+    .page {
+      max-width: 1180px; margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .hero { text-align: center; margin-bottom: 48px; }
+    .hero .eyebrow {
+      font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--fg-muted); margin-bottom: 20px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .live-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #e0483e; display: inline-block;
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 400; font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.08; letter-spacing: -0.01em; margin-bottom: 18px;
+    }
+    .hero h1 em { font-style: italic; }
+    .hero p {
+      color: var(--fg-muted); font-weight: 300;
+      font-size: 1.02rem; max-width: 520px; margin: 0 auto; line-height: 1.6;
+    }
+
+    /* PLAYER */
+    .player-wrap {
+      border: 1px solid var(--border); border-radius: 18px;
+      overflow: hidden; background: #000;
+    }
+    .player {
+      position: relative; padding-top: 56.25%;
+    }
+    .player iframe {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; border: none;
+    }
+
+    /* placeholder shown until the stream embed is wired */
+    .player-placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 16px;
+      text-align: center; padding: 24px;
+      background: var(--surface);
+    }
+    .player-placeholder .mark {
+      font-family: var(--font-display); font-size: 2rem; opacity: 0.5;
+    }
+    .player-placeholder .title {
+      font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--fg-muted);
+    }
+    .player-placeholder p {
+      color: var(--fg-muted); font-weight: 300; font-size: 0.92rem;
+      max-width: 380px; line-height: 1.6;
+    }
+
+    .stream-note {
+      text-align: center; margin-top: 26px;
+      font-size: 0.85rem; color: var(--fg-muted); font-weight: 300; line-height: 1.6;
+    }
+
+    footer {
+      text-align: center; padding: 0 24px 48px;
+      font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--fg-muted);
+    }
+    footer a { color: inherit; text-decoration: none; transition: color 0.3s; }
+    footer a:hover { color: var(--fg); }
+
+    @media (max-width: 600px) {
+      nav, .page { padding-left: 20px; padding-right: 20px; }
+      .page { padding-top: 108px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <nav>
+    <div class="nav-spacer"></div>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo">
+    </a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+  </nav>
+
+  <main class="page">
+    <div class="hero">
+      <div class="eyebrow"><span class="live-dot" id="liveDot" hidden></span>Wedding Livestream</div>
+      <h1>Tyler <em>&</em> Tino</h1>
+      <p>Welcome, and thank you for celebrating with Tyler and Tino today. The ceremony will play right here once we go live.</p>
+    </div>
+
+    <div class="player-wrap">
+      <div class="player" id="player">
+        <div class="player-placeholder" id="placeholder">
+          <div class="mark">T&T</div>
+          <div class="title">Stream starting soon</div>
+          <p>We're getting set up on our end. Keep this page open, the stream will appear here automatically once we're rolling.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="stream-note">If the video pauses or drops, refresh the page. For the best experience, turn your phone sideways or watch on a larger screen.</p>
+  </main>
+
+  <footer>
+    Filmed live by <a href="index.html">Trident Films</a>
+  </footer>
+
+  <!--
+  ============================================================================
+  ONE THING LEFT: paste the Cloudflare Stream embed src into STREAM_SRC below.
+  It looks like "https://customer-<CODE>.cloudflarestream.com/<LIVE_INPUT_UID>/iframe"
+  Find it in Cloudflare Dash > Stream > Live Inputs > your input > Embed.
+  While STREAM_SRC is empty the page shows the "starting soon" card.
+  ============================================================================
+  -->
+  <script type="text/javascript">
+    // 👇 THE ONLY LINE TO EDIT — Cloudflare Stream iframe src for the live input
+    const STREAM_SRC = "";
+  </script>
+
+  <script>
+    /* ---------- theme ---------- */
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const navLogo = document.getElementById('navLogo');
+    function setTheme(t) {
+      html.setAttribute('data-theme', t);
+      themeToggle.textContent = t === 'dark' ? '☀️' : '🌙';
+      navLogo.src = t === 'dark' ? 'images/logos/TridentFilms-White.png' : 'images/logos/TridentFilms-Black.png';
+      localStorage.setItem('tf-theme', t);
+    }
+    function toggleTheme() { setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
+    setTheme(localStorage.getItem('tf-theme') || 'dark');
+
+    /* ---------- Cloudflare Stream player ---------- */
+    if (STREAM_SRC) {
+      const iframe = document.createElement('iframe');
+      iframe.src = STREAM_SRC + (STREAM_SRC.includes('?') ? '&' : '?') + 'autoplay=true';
+      iframe.allow = 'accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;';
+      iframe.allowFullscreen = true;
+      document.getElementById('placeholder').remove();
+      document.getElementById('player').appendChild(iframe);
+      document.getElementById('liveDot').hidden = false;
+    }
+  </script>
+</body>
+</html>
