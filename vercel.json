@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/tylertinowedding", "destination": "/tylertinowedding.html" }
+  ]
+}
