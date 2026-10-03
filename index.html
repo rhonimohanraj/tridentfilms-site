@@ -2410,6 +2410,26 @@
     }
   </script>
 
+  <script>
+    // Live Instagram feed: replace the static tiles with the latest @tridentfilms posts (falls back silently).
+    (function () {
+      var tiles = document.querySelectorAll('#feed .feed-item');
+      if (!tiles.length) return;
+      fetch('/api/instagram').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+        if (!d || !d.items || !d.items.length) return;
+        d.items.slice(0, tiles.length).forEach(function (m, i) {
+          var tile = tiles[i], img = tile.querySelector('img');
+          img.src = m.image;
+          img.alt = m.caption || 'Trident Films on Instagram';
+          tile.style.cursor = 'pointer';
+          tile.setAttribute('role', 'link');
+          tile.setAttribute('tabindex', '0');
+          tile.onclick = function () { window.open(m.permalink, '_blank', 'noopener'); };
+          tile.onkeydown = function (e) { if (e.key === 'Enter') tile.onclick(); };
+        });
+      }).catch(function () {});
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
