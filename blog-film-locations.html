@@ -108,17 +108,36 @@
       .cursor-dot, .cursor-ring { display: none; } .theme-toggle { bottom: 20px; right: 20px; width: 42px; height: 42px; }
     }
   </style>
+  <style id="layout-fixes">
+    /* Theme toggle sits in the nav (was a floating button covering the footer). */
+    nav .nav-links { margin-left: auto; }
+    nav .theme-toggle { position: static; width: 38px; height: 38px; margin-left: 28px; flex-shrink: 0; font-size: 0.95rem; background: transparent; backdrop-filter: none; }
+    @media (max-width: 768px) {
+      nav .theme-toggle { margin-left: auto; }
+      nav .hamburger { margin-left: 20px; }
+    }
+
+    /* Footer: centered stack — logo, links, copyright. */
+    footer { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 28px; padding: 64px 48px 56px; text-align: center; }
+    footer .footer-logo img { margin: 0; }
+    footer .footer-right { order: 2; flex-wrap: wrap; justify-content: center; gap: 16px 36px; }
+    footer .footer-center { order: 3; }
+    @media (max-width: 768px) {
+      footer { padding: 56px 24px 48px; gap: 24px; }
+      footer .footer-right { gap: 14px 24px; }
+    }
+  </style>
 </head>
 <body>
   <div class="grain"></div>
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
-  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
   <nav id="mainNav">
     <a href="index.html" class="nav-logo"><img src="images/logos/TridentFilms-White.png" alt="Trident Films" id="navLogo"></a>
     <div class="nav-links">
       <a href="index.html#story">About</a><a href="index.html#services">Services</a><a href="index.html#portfolio">Work</a><a href="index.html#team">Team</a><a href="our-thoughts.html">Blog</a><a href="inquiry.html" class="nav-cta">Inquire</a>
     </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
     <div class="hamburger" id="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
   </nav>
   <div class="mobile-nav" id="mobileNav">
