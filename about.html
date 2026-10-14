@@ -123,6 +123,8 @@
     .article-body li { font-size: 0.97rem; color: var(--fg-muted); line-height: 1.92; font-weight: 300; margin-bottom: 8px; }
     @media (max-width: 768px) { .article-header { padding-top: 120px; } }
   </style>
+<style id="reduced-motion">/* Respect the OS reduce-motion setting (apple-design skill, section 14) */
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>
   <div class="grain"></div>
