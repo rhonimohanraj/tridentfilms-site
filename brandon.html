@@ -1817,6 +1817,12 @@
     .city-links { padding: 0 48px 110px; font-size: 1rem; line-height: 1.9; color: var(--fg-muted); font-weight: 300; max-width: 900px; }
     .nap { font-size: 0.8rem; color: var(--fg-dim); letter-spacing: 0.04em; }
     .nap a { color: inherit; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .hero-video { transform: none !important; }
+      .cursor-dot, .cursor-ring { display: none; }
+    }
     @media (max-width: 700px) {
       table.pkg { min-width: 0; }
       table.pkg thead { position: absolute; left: -9999px; }
@@ -1894,7 +1900,7 @@
   <main>
     <!-- HERO -->
     <section id="hero" class="city-hero">
-      <img class="hero-video" src="images/city/films-wedding-couple-walking-prairie-field.jpg" alt="Couple walking hand in hand through a prairie field on their wedding day" fetchpriority="high">
+      <img class="hero-video" src="images/city/films-wedding-couple-walking-prairie-field.jpg" width="1600" height="754" alt="Couple walking hand in hand through a prairie field on their wedding day" fetchpriority="high">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="hero-tag">Brandon · Westman · Manitoba</p>
