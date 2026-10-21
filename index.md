@@ -1,22 +1,26 @@
-# Trident Films — Wedding Videography in Winnipeg, MB
+# Wedding Videography in Manitoba | Trident Films
 
-Cinematic Wedding Films *crafted with soul.*
+Cinematic Wedding Films in Manitoba, *crafted with soul.*
 
-Winnipeg · Manitoba · Destination
+Brandon · Winnipeg · Destination
 
-Luxury wedding videography capturing your love story — across Winnipeg, the prairies, and beyond.
+Luxury wedding videography capturing your love story — across Brandon, Winnipeg, the prairies, and beyond.
 
 HTML version: https://www.tridentfilms.ca/
 
-Service area: Winnipeg, Headingley, Oak Bluff, Selkirk, Steinbach and all of Manitoba; Brandon and the Westman region; Regina and Saskatchewan; destination weddings.
+Service area: Brandon and the Westman region; Winnipeg, Headingley, Oak Bluff, Selkirk, Steinbach and all of Manitoba; Regina and Saskatchewan; destination weddings.
+
+City pages: [wedding videographer in Brandon](https://www.tridentfilms.ca/brandon.html) · [wedding videographer in Winnipeg](https://www.tridentfilms.ca/winnipeg.html) · [weddings in Regina](https://www.tridentfilms.ca/regina.html)
 
 [Book Your Film](https://www.tridentfilms.ca/inquiry.html)
 
 ## Storytellers first. Videographers second.
 
-At Trident Films, we're more than videographers — we're storytellers. Proudly serving Winnipeg and all of Manitoba, our passionate team has filmed over 120 love stories across the province and beyond.
+At Trident Films, we're more than videographers — we're storytellers. Proudly serving Brandon, Winnipeg and all of Manitoba, our passionate team has filmed over 120 love stories across the province and beyond.
 
 From intimate backyard weddings to cinematic destination celebrations, our mission is always the same: to capture authentic emotion and transform your celebration into a timeless masterpiece you'll treasure for generations.
+
+Planning a wedding in Brandon or anywhere in Westman? Meet your [wedding videographer in Brandon](https://www.tridentfilms.ca/brandon.html). Getting married in the capital region? See our [wedding videographer in Winnipeg](https://www.tridentfilms.ca/winnipeg.html) page. We also film [weddings in Regina](https://www.tridentfilms.ca/regina.html).
 
 - 120+ wedding films
 - 6 years of experience
@@ -72,14 +76,14 @@ Your wedding day deserves more than documentation — it deserves artistry. We'd
 - Book a 30-minute call with Joey: https://www.tridentfilms.ca/book.html
 - Email: hello@tridenteventgroup.ca
 - Phone: +1 431-441-2676
-- Address: Trident Event Group Inc., 19 Premier Avenue, Brandon, MB R7B 3N9, Canada
+- Winnipeg base: 425 Ballantrae Dr, Suite 110, Winnipeg, MB R3T 6H6
 - Instagram: https://www.instagram.com/tridentfilms/
 
 Trident Films is a division of Trident Event Group (https://www.tridenteventgroup.ca). Photography: https://tridentstudios.ca
 
 ## More pages
 
-- Winnipeg (homepage): https://www.tridentfilms.ca/ (Markdown: https://www.tridentfilms.ca/index.md)
+- Winnipeg: https://www.tridentfilms.ca/winnipeg.html (Markdown: https://www.tridentfilms.ca/winnipeg.md)
 - Brandon: https://www.tridentfilms.ca/brandon.html (Markdown: https://www.tridentfilms.ca/brandon.md)
 - Regina: https://www.tridentfilms.ca/regina.html (Markdown: https://www.tridentfilms.ca/regina.md)
 - About: https://www.tridentfilms.ca/about (Markdown: https://www.tridentfilms.ca/about.md)

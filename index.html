@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark" data-city="winnipeg">
+<html lang="en" data-theme="dark" data-city="manitoba">
 
 <head>
   <meta charset="UTF-8">
@@ -12,16 +12,16 @@
     gtag('js', new Date());
     gtag('config', 'G-DPLEQ5EYP6');
   </script>
-  <title>Trident Films — Wedding Videography in Winnipeg, MB</title>
+  <title>Wedding Videography in Manitoba | Trident Films</title>
   <link rel="icon" type="image/png" href="images/logos/TridentFilms-White.png">
   <meta name="description"
-    content="Luxury cinematic wedding videography in Winnipeg, Manitoba. 120+ love stories captured across Winnipeg, the prairies, and beyond. Book your film today.">
+    content="Luxury cinematic wedding videography across Manitoba, from Brandon and Westman to Winnipeg. 120+ love stories filmed. Book your film today.">
   <link rel="canonical" href="https://www.tridentfilms.ca/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trident Films">
   <meta property="og:url" content="https://www.tridentfilms.ca/">
-  <meta property="og:title" content="Trident Films — Wedding Videography in Winnipeg, MB">
-  <meta property="og:description" content="Luxury cinematic wedding videography in Winnipeg, Manitoba. 120+ love stories captured across Winnipeg, the prairies, and beyond.">
+  <meta property="og:title" content="Wedding Videography in Manitoba | Trident Films">
+  <meta property="og:description" content="Luxury cinematic wedding videography across Manitoba, from Brandon and Westman to Winnipeg. 120+ love stories filmed.">
   <meta property="og:image" content="https://www.tridentfilms.ca/images/aboutpic02.jpg">
   <meta property="og:image:width" content="2499">
   <meta property="og:image:height" content="1200">
@@ -30,10 +30,7 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": [
-    "Organization",
-    "LocalBusiness"
-  ],
+  "@type": "Organization",
   "@id": "https://www.tridentfilms.ca/#organization",
   "name": "Trident Films",
   "url": "https://www.tridentfilms.ca/",
@@ -42,26 +39,23 @@
     "https://www.tridentfilms.ca/images/aboutpic02.jpg",
     "https://www.tridentfilms.ca/images/logos/TridentFilms-White.png"
   ],
-  "description": "Luxury cinematic wedding videography in Winnipeg, Manitoba. Trident Films has filmed over 120 love stories across Winnipeg, Brandon and the Westman region, Regina and Saskatchewan, and destination weddings beyond.",
+  "description": "Luxury cinematic wedding videography across Manitoba. Trident Films has filmed over 120 love stories in Brandon and the Westman region, Winnipeg and the Capital Region, Regina and Saskatchewan, and destination weddings beyond.",
   "email": "hello@tridenteventgroup.ca",
   "telephone": "+1-431-441-2676",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "19 Premier Avenue",
-    "addressLocality": "Brandon",
     "addressRegion": "MB",
-    "postalCode": "R7B 3N9",
     "addressCountry": "CA"
   },
   "areaServed": [
+    "Manitoba",
+    "Brandon",
+    "Westman",
     "Winnipeg",
     "Headingley",
     "Oak Bluff",
     "Selkirk",
     "Steinbach",
-    "Manitoba",
-    "Brandon",
-    "Westman",
     "Regina",
     "Saskatchewan"
   ],
@@ -81,12 +75,20 @@
     "https://www.instagram.com/tridentfilms/"
   ],
   "parentOrganization": {
+    "@id": "https://tridenteventgroup.ca/#organization",
     "@type": "Organization",
     "name": "Trident Event Group",
     "legalName": "Trident Event Group Inc.",
     "url": "https://www.tridenteventgroup.ca"
   },
-  "priceRange": "$$$$"
+  "department": [
+    {
+      "@id": "https://www.tridentfilms.ca/brandon.html#business"
+    },
+    {
+      "@id": "https://www.tridentfilms.ca/winnipeg.html#business"
+    }
+  ]
 }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1702,51 +1704,8 @@
       margin: 4px 12px;
     }
   </style>
-  <script>
-    /* GEO REDIRECT — runs before paint */
-    (function () {
-      var CURRENT = document.documentElement.dataset.city || 'winnipeg';
-      var CITIES = [
-        { id: 'winnipeg', lat: 49.8951, lng: -97.1384, url: 'index.html' },
-        { id: 'brandon', lat: 49.8485, lng: -99.9501, url: 'brandon.html' },
-        { id: 'regina', lat: 50.4452, lng: -104.6189, url: 'regina.html' },
-      ];
-      function hav(a, b, c, d) {
-        var R = 6371, dL = (c - a) * Math.PI / 180, dG = (d - b) * Math.PI / 180;
-        var x = Math.sin(dL / 2) * Math.sin(dL / 2) + Math.cos(a * Math.PI / 180) * Math.cos(c * Math.PI / 180) * Math.sin(dG / 2) * Math.sin(dG / 2);
-        return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
-      }
-      function nearest(lat, lng) {
-        var best = CITIES[0], bestD = Infinity;
-        CITIES.forEach(function (c) { var d = hav(lat, lng, c.lat, c.lng); if (d < bestD) { bestD = d; best = c; } });
-        return best;
-      }
-      function goTo(city) { if (city.id !== CURRENT) window.location.replace(city.url); }
-      /* manual override always wins */
-      if (localStorage.getItem('tf_city_manual')) {
-        var m = CITIES.find(function (c) { return c.id === localStorage.getItem('tf_city'); });
-        if (m) goTo(m);
-        return;
-      }
-      /* skip geo if detected recently */
-      var ts = localStorage.getItem('tf_geo_ts');
-      if (ts && Date.now() - parseInt(ts) < 86400000) {
-        var s = CITIES.find(function (c) { return c.id === localStorage.getItem('tf_city'); });
-        if (s) goTo(s);
-        return;
-      }
-      /* fresh detection */
-      fetch('https://ipapi.co/json/')
-        .then(function (r) { return r.json(); })
-        .then(function (d) {
-          localStorage.setItem('tf_geo_ts', Date.now().toString());
-          var city = nearest(d.latitude, d.longitude);
-          localStorage.setItem('tf_city', city.id);
-          goTo(city);
-        }).catch(function () { });
-    })();
-  </script>
   <style id="layout-fixes">
+    .story-cities a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
     /* Theme toggle sits in the nav (was a floating button covering the footer). */
     nav .nav-links { margin-left: auto; }
     nav .theme-toggle { position: static; width: 38px; height: 38px; margin-left: 28px; flex-shrink: 0; font-size: 0.95rem; background: transparent; backdrop-filter: none; }
@@ -1807,10 +1766,10 @@
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-tag">Winnipeg · Manitoba · Destination</p>
-      <h1 class="hero-title">Cinematic Wedding Films <em>crafted with soul.</em></h1>
-      <p class="hero-sub">Luxury wedding videography capturing your love story — across Winnipeg, the prairies, and
-        beyond.
+      <p class="hero-tag">Brandon · Winnipeg · Destination</p>
+      <h1 class="hero-title">Cinematic Wedding Films in Manitoba, <em>crafted with soul.</em></h1>
+      <p class="hero-sub">Luxury wedding videography capturing your love story — across Brandon, Winnipeg, the prairies,
+        and beyond.
       </p>
       <a href="inquiry.html" class="hero-btn">Book Your Film</a>
     </div>
@@ -1826,11 +1785,15 @@
       <p class="section-tag">Behind The Lens</p>
       <h2 class="section-title">Storytellers first. <em>Videographers second.</em></h2>
       <p class="story-body">At Trident Films, we're more than videographers — we're storytellers. Proudly serving
-        Winnipeg and all of Manitoba, our passionate team has filmed over 120 love stories across the province and
+        Brandon, Winnipeg and all of Manitoba, our passionate team has filmed over 120 love stories across the province and
         beyond.</p>
       <p class="story-body">From intimate backyard weddings to cinematic destination celebrations, our mission is always
         the same: to capture authentic emotion and transform your celebration into a timeless masterpiece you'll
         treasure for generations.</p>
+      <p class="story-body story-cities">Planning a wedding in Brandon or anywhere in Westman? Meet your
+        <a href="brandon.html">wedding videographer in Brandon</a>. Getting married in the capital region? See our
+        <a href="winnipeg.html">wedding videographer in Winnipeg</a> page. We also film
+        <a href="regina.html">weddings in Regina</a>.</p>
       <div class="story-stat-bar">
         <div class="story-stat">
           <div class="story-stat-num" data-count="120">0</div>
@@ -2314,11 +2277,11 @@
     <div class="footer-right">
       <div class="city-switcher" id="citySwitcher">
         <button class="city-btn" id="cityBtn" aria-label="Change location">
-          <span id="cityLabel">Winnipeg</span>
+          <span id="cityLabel">Manitoba</span>
           <span style="opacity:0.5;font-size:0.6rem;">▾</span>
         </button>
         <div class="city-dropdown">
-          <a href="index.html" class="city-opt active" data-city="winnipeg">Winnipeg, MB</a>
+          <a href="winnipeg.html" class="city-opt" data-city="winnipeg">Winnipeg, MB</a>
           <a href="brandon.html" class="city-opt" data-city="brandon">Brandon, MB</a>
           <a href="regina.html" class="city-opt" data-city="regina">Regina, SK</a>
         </div>
