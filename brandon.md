@@ -113,6 +113,10 @@ Often, with planning. Drone flights depend on the venue's permission, the weathe
 
 Yes. We film across Westman, including Virden, Souris, Neepawa, Minnedosa, Carberry, Shilo, Boissevain and Dauphin, and on farms and acreages in between. Travel is listed on its own line of your quote so you can see it clearly. We also film in [Winnipeg](https://www.tridentfilms.ca/winnipeg.html) and [Regina](https://www.tridentfilms.ca/regina.html).
 
+### How many hours of video coverage does a Brandon wedding need?
+
+Most Brandon wedding days fit our Essential Collection: 10 hours with two videographers, from getting ready to the dances. That covers a typical Westman day that moves from a family home to a church or riverside ceremony and on to a ballroom or hall. For elopements, small weddings or shorter days, we shape the coverage to your timeline and quote it on a call.
+
 ### Can we book video with photography, a DJ or a photo booth?
 
 Yes. Trident Films is part of Trident Event Group, which also runs Trident Studios for photography, Trident Music for DJs and Trident Photobooths. Booking several services with one team means one planning call, one shared timeline, and vendors who already know how to work around each other on the day.

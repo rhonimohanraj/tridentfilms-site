@@ -20,7 +20,7 @@ At Trident Films, we're more than videographers — we're storytellers. Proudly 
 
 From intimate backyard weddings to cinematic destination celebrations, our mission is always the same: to capture authentic emotion and transform your celebration into a timeless masterpiece you'll treasure for generations.
 
-Planning a wedding in Brandon or anywhere in Westman? Meet your [wedding videographer in Brandon](https://www.tridentfilms.ca/brandon.html). Getting married in the capital region? See our [wedding videographer in Winnipeg](https://www.tridentfilms.ca/winnipeg.html) page. We also film [weddings in Regina](https://www.tridentfilms.ca/regina.html).
+Planning a wedding in Brandon or anywhere in Westman? Meet your [wedding videographer in Brandon](https://www.tridentfilms.ca/brandon.html). Getting married in the capital region? Explore our [Winnipeg wedding videography](https://www.tridentfilms.ca/winnipeg.html). We also film [weddings in Regina](https://www.tridentfilms.ca/regina.html).
 
 - 120+ wedding films
 - 6 years of experience

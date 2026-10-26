@@ -8,7 +8,7 @@ Cinematic wedding films from the Exchange District to the edge of the Perimeter 
 
 [Check Your Date](https://www.tridentfilms.ca/inquiry.html)
 
-Trident Films is a wedding videography team serving Winnipeg and the Capital Region, including Selkirk, Steinbach and Stonewall. The Essential Collection starts at $4,399 plus GST for 10 hours with two videographers, a teaser, a 5 to 6 minute highlight film, and full ceremony and toasts films. We have filmed weddings at the Winnipeg Art Gallery, Bel Acres Golf & Country Club and Bridges Golf Course, and Trident Films Winnipeg is rated 5.0 on Google from 2 reviews. Call [+1-431-441-2676](tel:+14314412676) or use the [inquiry form](https://www.tridentfilms.ca/inquiry.html) to check your date.
+Trident Films is a wedding videography team serving Winnipeg and the Capital Region, including Selkirk, Steinbach and Stonewall. The Essential Collection starts at $4,399 plus GST for 10 hours with two videographers, a teaser, a 5 to 6 minute highlight film, and full ceremony and toasts films. We have filmed weddings at the Winnipeg Art Gallery, Bel Acres Golf & Country Club and Bridges Golf Course, and Trident Films Winnipeg is rated 5.0 on Google from 3 reviews. Call [+1-431-441-2676](tel:+14314412676) or use the [inquiry form](https://www.tridentfilms.ca/inquiry.html) to check your date.
 
 ## Winnipeg at a glance
 
@@ -17,7 +17,7 @@ Trident Films is a wedding videography team serving Winnipeg and the Capital Reg
 - **Turnaround:** 16 to 20 weeks, delivered in one private online gallery.
 - **Where:** anywhere in Winnipeg, plus Selkirk, Steinbach, Stonewall, Oak Bluff, Headingley and Gimli.
 - **Lead time:** your date is held from the moment the agreement is signed and the $1,500 retainer is paid, so book once your venue is set.
-- **Google rating:** 5.0 from 2 reviews.
+- **Google rating:** 5.0 from 3 reviews.
 
 ## Winnipeg wedding film *pricing.*
 
@@ -106,6 +106,10 @@ Yes. The Fort Garry Hotel is one of the Winnipeg venues we know well, from the l
 ### Is drone footage allowed at Winnipeg venues?
 
 Sometimes. Much of Winnipeg sits inside the controlled airspace around Winnipeg Richardson International Airport, where a drone flight needs an advanced pilot certificate and permission from NAV CANADA. Parks and heritage sites can have their own rules too. Venues just outside the city, like golf courses and rural properties, are usually simpler, and we check every location first.
+
+### Can you film a winter wedding in Winnipeg?
+
+Yes. Winter weddings move indoors, and Winnipeg has grand interiors for it, from the Crystal Ballroom at The Fort Garry Hotel to the Winnipeg Art Gallery. We plan short outdoor portraits for the softest afternoon light and film the rest of the day inside. The Essential Collection covers 10 hours with two videographers in any season, and travel to venues past the Perimeter is listed on its own line.
 
 ### Do you travel outside Winnipeg?
 
