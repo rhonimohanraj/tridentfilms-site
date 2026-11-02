@@ -117,6 +117,10 @@ Yes. We film across Westman, including Virden, Souris, Neepawa, Minnedosa, Carbe
 
 Most Brandon wedding days fit our Essential Collection: 10 hours with two videographers, from getting ready to the dances. That covers a typical Westman day that moves from a family home to a church or riverside ceremony and on to a ballroom or hall. For elopements, small weddings or shorter days, we shape the coverage to your timeline and quote it on a call.
 
+### How far in advance should we book a wedding videographer in Brandon?
+
+Most couples we film first reach out 9 to 18 months before the wedding, and July and August Saturdays are our busiest dates. Your date is held once the agreement is signed and the $1,500 retainer is paid, so get in touch as soon as your venue is confirmed. Shorter notice can still work: call +1-431-441-2676 and we will check the calendar for your day.
+
 ### Can we book video with photography, a DJ or a photo booth?
 
 Yes. Trident Films is part of Trident Event Group, which also runs Trident Studios for photography, Trident Music for DJs and Trident Photobooths. Booking several services with one team means one planning call, one shared timeline, and vendors who already know how to work around each other on the day.

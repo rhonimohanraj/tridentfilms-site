@@ -111,6 +111,10 @@ Sometimes. Much of Winnipeg sits inside the controlled airspace around Winnipeg 
 
 Yes. Winter weddings move indoors, and Winnipeg has grand interiors for it, from the Crystal Ballroom at The Fort Garry Hotel to the Winnipeg Art Gallery. We plan short outdoor portraits for the softest afternoon light and film the rest of the day inside. The Essential Collection covers 10 hours with two videographers in any season, and travel to venues past the Perimeter is listed on its own line.
 
+### How do you record audio for our vows and speeches?
+
+We put wireless lavalier microphones on the officiant and on the groom or one partner, record directly from the ceremony soundboard when there is one, and run dual-channel backups as standard. For speeches, we confirm the microphone and speaker setup with your DJ or venue team before the day. That way every word of the vows and toasts comes through clearly in your ceremony and toasts films.
+
 ### Do you travel outside Winnipeg?
 
 Yes. We often film just past the Perimeter, at places like Bridges Golf Course in Starbuck, Bel Acres north of the city and Pineridge Hollow near Oakbank. We also cover Selkirk, Steinbach, Stonewall, Oak Bluff, Headingley and Gimli, and we have a separate page for [Brandon and Westman](https://www.tridentfilms.ca/brandon.html) weddings.
