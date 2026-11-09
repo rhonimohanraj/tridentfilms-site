@@ -121,6 +121,10 @@ Most Brandon wedding days fit our Essential Collection: 10 hours with two videog
 
 Most couples we film first reach out 9 to 18 months before the wedding, and July and August Saturdays are our busiest dates. Your date is held once the agreement is signed and the $1,500 retainer is paid, so get in touch as soon as your venue is confirmed. Shorter notice can still work: call +1-431-441-2676 and we will check the calendar for your day.
 
+### What happens if it rains on our Brandon wedding day?
+
+We plan for it. For farm and acreage weddings around Brandon, we scout the property before the day and agree on a covered backup spot for the vows and speeches, so the audio stays clear if the weather turns. On the day we move portraits to whatever shelter and light the venue offers, and we bring backup equipment for every primary piece. Your coverage and your films stay the same, rain or shine.
+
 ### Can we book video with photography, a DJ or a photo booth?
 
 Yes. Trident Films is part of Trident Event Group, which also runs Trident Studios for photography, Trident Music for DJs and Trident Photobooths. Booking several services with one team means one planning call, one shared timeline, and vendors who already know how to work around each other on the day.

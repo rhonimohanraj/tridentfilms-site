@@ -12,7 +12,7 @@ HTML version: https://www.tridentfilms.ca/regina.html
 
 ## Storytellers first. Videographers second.
 
-At Trident Films, we're more than videographers — we're storytellers. Proudly serving Regina and all of Saskatchewan, our passionate team has filmed over 120 love stories across the prairies and beyond.
+Trident Films brings wedding videography to Regina and all of Saskatchewan, and we approach each wedding as storytellers first. Our team has filmed over 120 love stories across the prairies and beyond.
 
 From intimate backyard weddings to cinematic destination celebrations, our mission is always the same: to capture authentic emotion and transform your celebration into a timeless masterpiece you'll treasure for generations.
 
