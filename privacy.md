@@ -27,6 +27,12 @@ Only service providers that help us run the business and deliver your event: our
 
 This website uses cookies for analytics. You can block or delete cookies in your browser settings; the site still works without them.
 
+## Advertising and remarketing
+
+We use Google Analytics and advertising tools from Google and Meta (Facebook and Instagram) to measure which pages and ads lead to inquiries, and to show our ads to people who have visited this site. These tools use cookies and similar technologies. Google may connect visits across your devices if you are signed in to a Google account with ad personalization turned on. When you submit an inquiry form, these tools are told that a form was sent; the answers you type stay with us.
+
+You can turn off personalized ads in [Google ad settings](https://adssettings.google.com) and in your [Meta ad preferences](https://accountscenter.facebook.com/ad_preferences), install the [Google Analytics opt-out add-on](https://tools.google.com/dlpage/gaoptout), or block cookies in your browser.
+
 ## How long we keep it
 
 Inquiry information is kept as long as needed to respond and follow up. Booking, contract and financial records are kept as long as needed to deliver your film and meet legal, tax and accounting obligations. After that we delete it or make it anonymous.
