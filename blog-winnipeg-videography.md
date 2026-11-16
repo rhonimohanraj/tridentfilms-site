@@ -38,13 +38,13 @@ Five polished films look impressive. Fifty films across different venues, season
 
 At Trident Films, our Winnipeg roots go deep. We've filmed over 120 weddings across the city — from intimate backyard garden ceremonies in Wolseley to grand ballroom receptions at the Delta Hotels — and we know how each venue changes throughout the day. We know where late-afternoon light hits the Exchange District, where to catch golden hour at FortWhyte Alive, and how to navigate the logistics of a split-location ceremony and reception without missing a beat.
 
-Beyond the technical knowledge, we approach every wedding as storytellers first. We're not trying to get every angle covered — we're trying to find the moments that reveal something true about who you are as a couple. That's the film you'll return to on your fifth anniversary, your twentieth, and far beyond.
+Beyond the technical knowledge, we approach every wedding as storytellers first. We look for the moments that reveal something true about who you are as a couple, and build the film around them. That's the film you'll return to on your fifth anniversary, your twentieth, and far beyond.
 
 We also offer full packages that include DJ services and photography through the [Trident Event Group](https://www.tridenteventgroup.ca), which means couples can consolidate their entire creative team under one trusted roof — simplifying planning and ensuring a cohesive look and feel across every deliverable.
 
 ## Ready to Book Your Winnipeg Wedding Film?
 
-If you're planning a wedding in Winnipeg and want a team that treats your day as the story it is, we'd love to be a part of it. Reach out through our [inquiry page](https://www.tridentfilms.ca/inquiry.html) to start the conversation — we'll tell you about availability, walk you through our packages, and answer any questions you have about the process.
+If you're planning a wedding in Winnipeg and want a team that treats your day as the story it is, we'd love to be a part of it. Our page on [wedding videography in Winnipeg](https://www.tridentfilms.ca/winnipeg.html) lists our collections and starting price, the Winnipeg venues we've filmed at and answers to common questions. Reach out through our [inquiry page](https://www.tridentfilms.ca/inquiry.html) to start the conversation — we'll tell you about availability, walk you through our packages, and answer any questions you have about the process.
 
 Your love story deserves a film that does it justice. Let's make that happen.
 

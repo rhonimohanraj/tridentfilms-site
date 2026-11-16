@@ -123,6 +123,10 @@ Yes. We often film just past the Perimeter, at places like Bridges Golf Course i
 
 Your highlight film runs 5 to 6 minutes and tells the story of the whole day, and a short teaser comes with it for sharing. The ceremony film usually runs 20 to 30 minutes, so your vows stay uncut, and the toasts film runs about 45 minutes to an hour, with every speech from your Winnipeg reception in full. All of them arrive together in one private online gallery.
 
+### Can we get a separate film of our first dance and parent dances?
+
+Yes. Our coverage runs from getting ready through the formal dances, and the best moments from them go into your highlight film. If you want the dances as their own film, add the dances film when you book. Your first dance and parent dances are edited together and delivered in the same online gallery as the rest of your Winnipeg wedding films.
+
 ### Where is Trident Films located in Winnipeg?
 
 Our Winnipeg base is at 425 Ballantrae Dr, Suite 110, Winnipeg, MB R3T 6H6. Most planning happens by phone or video call, so you can book a 30-minute call with us from anywhere. Reach us at +1-431-441-2676 or hello@tridenteventgroup.ca.

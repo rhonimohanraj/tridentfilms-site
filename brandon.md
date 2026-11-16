@@ -125,6 +125,10 @@ Most couples we film first reach out 9 to 18 months before the wedding, and July
 
 We plan for it. For farm and acreage weddings around Brandon, we scout the property before the day and agree on a covered backup spot for the vows and speeches, so the audio stays clear if the weather turns. On the day we move portraits to whatever shelter and light the venue offers, and we bring backup equipment for every primary piece. Your coverage and your films stay the same, rain or shine.
 
+### Can we get the raw footage from our Brandon wedding?
+
+Yes, as an add-on. Our collections include a teaser and a highlight film, and the Essential Collection adds a full ceremony film and a toasts film. If you want more of your Brandon wedding than the edited films hold, the raw footage add-on gathers the rest of the day's footage into a separate film in your online gallery. Ask for it when you book.
+
 ### Can we book video with photography, a DJ or a photo booth?
 
 Yes. Trident Films is part of Trident Event Group, which also runs Trident Studios for photography, Trident Music for DJs and Trident Photobooths. Booking several services with one team means one planning call, one shared timeline, and vendors who already know how to work around each other on the day.
