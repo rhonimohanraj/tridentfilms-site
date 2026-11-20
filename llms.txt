@@ -36,6 +36,7 @@ Mailing address: Trident Event Group Inc., 19 Premier Avenue, Brandon, MB R7B 3N
 - [Brandon wedding videography](https://www.tridentfilms.ca/brandon.md): HTML https://www.tridentfilms.ca/brandon.html
 - [Regina wedding videography](https://www.tridentfilms.ca/regina.md): HTML https://www.tridentfilms.ca/regina.html
 - [About](https://www.tridentfilms.ca/about.md): HTML https://www.tridentfilms.ca/about
+- [Gives Back (Markdown)](https://www.tridentfilms.ca/giving-back.md): services and time we have donated to community causes and the organizations we support. HTML: https://www.tridentfilms.ca/giving-back
 - [Contact](https://www.tridentfilms.ca/contact.md): HTML https://www.tridentfilms.ca/contact
 - [Privacy policy](https://www.tridentfilms.ca/privacy.md): HTML https://www.tridentfilms.ca/privacy
 - [Inquiry form](https://www.tridentfilms.ca/inquiry.md): HTML https://www.tridentfilms.ca/inquiry.html
